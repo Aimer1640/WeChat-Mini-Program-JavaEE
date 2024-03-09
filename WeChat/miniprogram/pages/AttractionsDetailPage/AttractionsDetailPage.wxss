@@ -1,0 +1,643 @@
+/* 页面背景色 */
+page {
+  background: #007D68
+}
+
+/* 主体结构 */
+.Body {
+/* Body */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 390px;
+height: 762px;
+left: 0px;
+top: 20px;
+
+}
+
+/* 次主体结构 */
+.RealBody {
+  /* Real Body */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px 20px;
+gap: 20px;
+
+width: 390px;
+height: 100%;
+
+background: #FFFFFF;
+border-radius: 10px 10px 0px 0px;
+
+/* Inside auto layout */
+
+flex: none;
+/* order: 1; */
+position: relative;
+flex-grow: 0;
+}
+
+/* 轮播图及景点展示 容器 样式 */
+.TopHalf-Container{
+  /* Text */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 390px;
+height: 405px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 轮播图 容器 样式 */
+.Carousel-Container{
+  /* 轮播图 */
+
+
+width: 390px;
+height: 250px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 景点展示 容器 样式 */
+.AttractionsDetails-Container{
+  /* Text */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px 0px;
+gap: 10px;
+
+width: 390px;
+height: 155px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 景点名称、时间、区域 行 容器 样式 */
+.AttractionsTop-Row-Container{
+/* 数据 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 10px;
+
+width: 390px;
+height: 60px;
+
+border-radius: 0px 0px 10px 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 景点名称、时间、区域 行 样式 */
+.AttractionsTop-Row{
+  /* Info */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 5px;
+
+width: 350px;
+height: 60px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 景点名称 字体 样式 */
+.Attractions-Name-TopText{
+  /* 大摆锤 */
+
+
+width: 72px;
+height: 34px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 34px;
+/* identical to box height */
+
+
+/* 主灰色 */
+
+color: #424242;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 景点时间、区域 行 样式 */
+.Attractions-BottomText-Row-Container{
+  /* Frame 7 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 185px;
+height: 14px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 景点时间 行 样式 */
+.Attractions-Time-Row{
+/* Time */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 86px 0px 0px;
+gap: 5px;
+
+width: 77px;
+height: 14px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 景点时间 字体 样式 */
+.Attractions-TimeText{
+/* 9:00 - 19:00 */
+
+
+width: 61px;
+height: 14px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #9D9D9D;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 景点区域 行 样式 */
+.Attractions-Area-Row{
+  /* Time */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 86px 0px 0px;
+gap: 5px;
+
+width: 87px;
+height: 14px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+
+/* 景点区域 字体 样式 */
+.Attractions-AreaText{
+  /* 水上世界 F区域 */
+
+
+width: 70px;
+height: 14px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #9D9D9D;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 景点注意事项 容器 样式 */
+.Attention-Container{
+  /* Data */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 350px;
+height: 26px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 景点注意事项 行 样式 */
+.Attention-Row{
+  /* 实时客流量 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 350px;
+height: 26px;
+
+background: rgba(193, 186, 7, 0.15);
+border-radius: 5px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 景点注意事项 字体 样式 */
+.Attention-Text{
+  /* 孕妇，儿童和老弱病残游客请勿游玩 */
+
+
+width: 162px;
+height: 13px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 14px;
+display: flex;
+align-items: center;
+
+/* 适中 */
+
+color: #C1BA07;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 景点实时数据 容器 样式 */
+.Attractions-Data-Container{
+  /* Data */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 350px;
+height: 26px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 3;
+flex-grow: 0;
+}
+
+/* 景点 实时客流量 行 样式 */
+.Attractions-Guest-Row{
+  /* 实时客流量 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 170px;
+height: 26px;
+
+background: rgba(7, 193, 96, 0.15);
+border-radius: 5px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 景点 实时客流量 字体 样式 */
+.Attractions-Guest-Text{
+  /* 实时游客数量：较少 */
+
+
+width: 92px;
+height: 13px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 14px;
+display: flex;
+align-items: center;
+
+/* 确认 */
+
+color: #07C160;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 景点 预计等待时间 行 样式 */
+.Attractions-WaitTime-Row{
+/* 实时客流量 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 170px;
+height: 26px;
+
+background: rgba(7, 193, 96, 0.15);
+border-radius: 5px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 景点 预计等待时间 字体 样式 */
+.Attractions-WaitTime-Text{
+/* 预计等待时间：立刻 */
+
+
+width: 92px;
+height: 13px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 14px;
+display: flex;
+align-items: center;
+
+/* 确认 */
+
+color: #07C160;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 景点人流量图表 容器 样式 */
+.Attractions-Chart-Container{
+  /* Data */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 350px;
+height: 130px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 景点人流量图表 行 样式 */
+.Attractions-Chart-Row{
+  /* Chart */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 350px;
+height: 130px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 景点人流量图表 标题字体 样式 */
+.Attractions-Chart-TopText{
+  /* 今日人流量 */
+
+
+width: 350px;
+height: 20px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* 主灰色 */
+
+color: #424242;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 景点人流量图表 位置 样式 */
+.Attractions-Chart{
+/* Frame 3 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 5px;
+
+width: 350px;
+height: 100.16px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}

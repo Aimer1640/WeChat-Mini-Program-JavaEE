@@ -1,0 +1,33 @@
+<!--pages/auth/auth.wxml-->
+<!-- <text>pages/auth/auth.wxml</text> -->
+<view>
+<view class="bg-white sollid-bottom">
+<open-data type="userAvatarUrl"></open-data>
+</view>
+  <!-- <view class="padding bg-white">
+    <view class="text-back">该应用将获取以下授权</view>
+    <view class="text-grey">获取您的公开信息（昵称、头像、性别等）</view>
+  </view>
+  <view style="display: flex;justify-content: center;"class="bg-white">
+    <button class="cu-btn xl bg-green padding-sm margin-xs">拒绝</button>
+    <button class="cu-btn xl bg-green padding-sm margin-xs" bindtap="jumpToHome">允许</button>
+  </view> -->
+
+  <form bindsubmit="formSubmit">
+  	<view class="cu-form-group">
+	  	<view class="title"><text class="text-red">*</text>账号：</view>
+      <input type="number" bindinput="inputChange" id="username" placeholder="请输入账号"/>
+	  </view>
+
+    <view class="cu-form-group align-start">
+		  <view class="title">密码：</view>
+      <input type="number" bindinput="inputChange" id="password" placeholder="请输入密码"/>
+    </view>
+
+    <view class="button-wrapper">
+      <button type="primary" formType="submit" class="primary">登录</button>
+    </view>
+</form>
+
+
+</view>

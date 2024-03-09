@@ -1,0 +1,63 @@
+<!-- 主体结构 使用figma样式-->
+<view class="container">
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class="Body">
+    <!-- 次主体结构 使用figma样式-->
+    <view class="RealBody">
+      <!-- 数据显示容器 -->
+      <view class="DataContainer">
+        <view class="TopText-Row">
+          <text class="TopText">截止至 2022/7/15 20:30:00</text>
+        </view>
+        <view class="DataDisplayText-Row">
+          <view class="PassengerFlow-Container">
+            <view class="PassengerFlow-TopText">景区实时游客数</view>
+            <view class="PassengerFlow-Text">4542人</view>
+          </view>
+          <view class="WaitingTime-Container">
+            <view class="WaitingTime-TopText">平均需等待时间</view>
+            <view class="WaitingTime-Text">2.6分钟</view>
+          </view>
+          <view class="PlayExperience-Container">
+            <view class="PlayExperience-TopText">整体游玩体验</view>
+            <view class="PlayExperience-Text">良好</view>
+          </view>
+
+        </view>
+        <view class="Chart-Container">
+          <text class="Chart-TopText">今日人流量</text>
+          <view class="Chart-Box">
+            
+            <image src="/images/pnum.png"></image>
+          </view>
+        </view>
+      </view>
+      <!-- 项目人流量标题 -->
+      <view class="PassengerFlowPoject-Row">
+        <text class="PassengerFlowPoject-TopText">项目人流量</text>
+      </view>
+      <!-- 项目搜素栏 -->
+      <view class="SearchBar-Container">
+        <text class="cuIcon-search"></text>
+      <input type="text" placeholder="搜索景区设施，路线" confirm-type="search"></input>
+      </view>
+      <!-- 项目详情卡片 -->
+      <view class="DetailsCard-Container">
+        <view class="DetailsCard-Body">
+          <view class="DetailsCard-Name-List">
+            <view class="DetailsCard-Name-TopText">项目名称</view>
+            <view class="DetailsCard-Name-Text" wx:for="{{markers}}"  bindtap="toSigth" data-sigth-id="{{item.id}}">{{item.title}}</view>
+          </view>
+          <view class="DetailsCard-Person-List">
+            <view class="DetailsCard-Person-TopText">游玩人数</view>
+            <view class="DetailsCard-Person-Text" wx:for="{{markers}}"  bindtap="toSigth" data-sigth-id="{{item.id}}">{{item.playnum}}</view>
+          </view>
+          <view class="DetailsCard-Time-List">
+            <view class="DetailsCard-Time-TopText">预计等待时间（分钟）</view>
+            <view class="DetailsCard-Time-Text" wx:for="{{markers}}"  bindtap="toSigth" data-sigth-id="{{item.id}}">{{item.EWT}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>

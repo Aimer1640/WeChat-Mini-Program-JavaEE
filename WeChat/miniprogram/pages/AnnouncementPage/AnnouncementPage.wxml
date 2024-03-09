@@ -1,0 +1,23 @@
+<!-- 主体结构 使用figma样式-->
+<view class="Body">
+  <!-- 次主体结构 使用figma样式-->
+  <view class="RealBody">
+    <!-- 项目搜索栏 -->
+    <view class="SearchBar-Container">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="搜索公告" confirm-type="search"></input>
+    </view>
+    <!-- 公告卡片 -->
+    <view class="AnnouncementCard-Container">
+      <view class="Announcement-Text-Container">
+        <view class="Announcement-TopText-Container">
+          <view class="Announcement-TopText">关于暂停“水上飞车”区域开放的通告</view>
+          <view class="Announcement-TimeText">2022/08/32 12:00:00</view>
+        </view>
+        <view class="Announcement-ContentText-Container">
+        <view class="Announcement-ContentText">测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测测... </view>
+      </view>
+      </view>
+    </view>
+  </view>
+</view>

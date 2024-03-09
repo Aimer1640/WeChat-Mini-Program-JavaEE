@@ -1,0 +1,1012 @@
+/* pages/PurchaseTickets/PurchaseTickets.wxss */
+/* 页面背景色 */
+page {
+    
+  }
+  
+  /* 搜索栏 容器 样式*/
+  .SearchBar-Container {
+    /* 1.iOS/1.Bars/3.Search Bar/Default */
+  
+  
+    width: 375px;
+    height: 50px;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    align-self: center;
+    flex-grow: 0;
+  }
+  
+  /* 搜索栏 样式*/
+  .SearchBar {
+    /* Frame 1 */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0px;
+    gap: 8px;
+  
+    position: absolute;
+    width: 359px;
+    height: 32px;
+    left: 8.5px;
+    top: 9px;
+  }
+  
+  
+  /* 主体结构 */
+  .Body {
+    /* Body */
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    
+  
+  }
+  
+  /* 次主体结构 */
+  .RealBody {
+    /* Real Body */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  
+    width: 375px;
+    height: 100%;
+  
+    background: #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+  
+    /* Inside auto layout */
+    flex: none;
+    /* order: 2; */
+    position: relative;
+    flex-grow: 0;
+  }
+  .sigthimg{
+    position: absolute;
+    width: 350px;
+    height: 160px;
+    top: 0;
+    left: 0;
+  }
+  
+  /* 游玩助手 行 样式 */
+  .PlayAssistant-Row {
+    /* 游玩助手 */
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px 36px 0px 0px;
+    gap: 210px;
+  
+    width: 350px;
+    height: 24px;
+  
+    /* Inside auto layout */
+    flex: none;
+    /* order: 0; */
+    position: relative;
+    flex-grow: 0;
+  }
+  
+  /* 游玩助手 字体 样式 */
+  .PlayAssistant-Text {
+    /* 游玩助手 */
+    width: 68px;
+    height: 24px;
+  
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    /* identical to box height */
+    /* 主灰色 */
+    color: #424242;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  /* 功能按钮栏 容器 样式 */
+  .FunctionButton-Container {
+    /* 功能按钮栏 */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24.5px;
+  
+    width: 350px;
+    height: 60px;
+  
+  
+    /* Inside auto layout */
+    flex: none;
+    /* order: 2; */
+    position: relative;
+    flex-grow: 0;
+  }
+  
+  /* 功能按钮栏 五字字体 样式 */
+  .FunctionButton-Text-five{
+    /* 实时人流量 */
+  
+  
+    width: 60px;
+    height: 17px;
+  
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    /* identical to box height */
+  
+  
+    /* 主灰色 */
+  
+    color: #424242;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  /* 功能按钮栏 四字字体 样式 */
+  .FunctionButton-Text {
+  /* 项目查看 */
+  
+  
+  width: 48px;
+  height: 17px;
+  
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  /* identical to box height */
+  
+  
+  /* 主灰色 */
+  
+  color: #424242;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  }
+  
+  /* 实时人流量 容器 样式*/
+  .PassengerFlowPage-Button-Container {
+    /* 实时人流量 */
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 3px;
+  
+    width: 60px;
+    height: 60px;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  /* 实时人流量 icon 框架*/
+  .PassengerFlowPage-Button-Icon-Frame {
+    /* ICON */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  
+    width: 40px;
+    height: 40px;
+  
+    background: #FFFFFF;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  /* 实时人流量 icon 样式*/
+  .PassengerFlowPage-Button-Icon{
+  /* Vector */
+  
+  
+  position: relative;
+  width: 21.98px;
+  height: 21.87px;
+  left: 1.33px;
+  top: 9.33px;
+  }
+  
+  /* 项目查看 容器 样式*/
+  .AttractionsListPage-Button-Container{
+  /* 景点查看 */
+  
+  
+  /* Auto layout */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 3px;
+  
+  width: 48px;
+  height: 60px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  }
+  
+  /* 项目查看 icon 框架*/
+  .AttractionsListPage-Button-Icon-Frame{
+  /* ICON */
+  
+  
+  /* Auto layout */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  
+  width: 23px;
+  height: 40px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  
+  /* 项目查看 icon 样式*/
+  .AttractionsListPage-Button-Icon{
+    width: 23px;
+    height: 20px;
+  }
+  
+  /* 智慧导航 容器 样式*/
+  .MapPage-Button-Container{
+  /* 智慧导航 */
+  
+  
+  /* Auto layout */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 3px;
+  
+  width: 48px;
+  height: 60px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  }
+  
+  /* 智慧导航 icon 框架*/
+  .MapPage-Button-Icon-Frame{
+  /* ICON */
+  
+  
+  /* Auto layout */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  
+  width: 24px;
+  height: 40px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  
+  /* 智慧导航 icon 样式*/
+  .MapPage-Button-Icon{
+    /* ri:guide-fill */
+  
+  
+  width: 24px;
+  height: 24px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  
+  /* 营业时间 容器 样式*/
+  .BusinessHoursPage-Button-Container{
+  /* 营业时间 */
+  
+  
+  /* Auto layout */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 3px;
+  
+  width: 48px;
+  height: 60px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  }
+  
+  /* 营业时间 icon 样式*/
+  .BusinessHoursPage-Button-Icon-Frame{
+  /* ICON */
+  
+  
+  /* Auto layout */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  
+  width: 28px;
+  height: 40px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  
+  /* 营业时间 icon 样式*/
+  .BusinessHoursPage-Button-Icon{
+    /* uis:schedule */
+  
+  
+  width: 28px;
+  height: 28px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  
+  /* 景区公告 容器 样式*/
+  .AnnouncementPage-Button-Container{
+  /* 景区公告 */
+  
+  
+  /* Auto layout */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 3px;
+  
+  width: 48px;
+  height: 60px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+  }
+  
+  /* 景区公告 icon 样式*/
+  .AnnouncementPage-Button-Icon-Frame{
+    /* ICON */
+  
+  
+  /* Auto layout */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  
+  width: 28px;
+  height: 40px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  
+  /* 景区公告 icon 样式*/
+  .AnnouncementPage-Button-Icon{
+    /* zondicons:announcement */
+  
+  
+  width: 28px;
+  height: 28px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  
+  /* 游玩项目 行 样式 */
+  .PlayItems-Row {
+    /* 游玩项目 */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 210px;
+  
+    width: 350px;
+    height: 24px;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    /* order: 3; */
+    position: relative;
+    flex-grow: 0;
+  }
+  
+  /* 游玩项目 字体 样式 */
+  .PlayItems-Text {
+    /* 游玩项目 */
+    width: 68px;
+    height: 24px;
+  
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    /* identical to box height */
+    /* 主灰色 */
+    color: #424242;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  /* 查看更多 行 样式*/
+  .More {
+    /* More */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+  
+    width: 64px;
+    height: 16px;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    /* order: 1; */
+    position: relative;
+    flex-grow: 0;
+  }
+  
+  /* 查看更多 字体 样式*/
+  .More-Text {
+    /* 查看更多 */
+  
+  
+    width: 40px;
+    height: 14px;
+  
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height */
+  
+  
+    /* 灰色 */
+  
+    color: #9D9D9D;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  /* 查看更多 箭头icon 框架*/
+  .More-Arrow-Frame{
+    /* 箭头 */
+  
+  
+    width: 8px;
+    height: 16px;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    position: relative;
+    flex-grow: 0;
+  }
+  
+  /* 查看更多 箭头icon */
+  .More-Arrow{
+    /* Group */
+  
+  
+  position: absolute;
+  width: 4.76px;
+  height: 8.65px;
+  left: 1.64px;
+  top: 4.68px;
+  }
+  
+  /* 项目卡片*/
+  .ProjectCard {
+    /* 项目卡片 */
+  
+  
+    width: 250px;
+    height: 240px;
+  
+    background: #FFFFFF;
+    /* Sha1 */
+  
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    /* order: 4; */
+    position: relative;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 图片 样式 */
+  .ProjectCard-Picture {
+    /* 项目卡片 图片 样式 */
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+  
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+  /* 项目卡片 数据 容器 样式 */
+  .ProjectCard-Data-Container {
+    /* 数据 */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  
+    position: absolute;
+    width: 350px;
+    height: 80px;
+    left: 0px;
+    top: 160px;
+  
+    border-radius: 0px 0px 10px 10px;
+  }
+  
+  /* 项目卡片 数据 列 左侧（名称等） 样式 */
+  .ProjectCard-Data-Left-List {
+    /* Info */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 1px;
+  
+    width: 155px;
+    height: 60px;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    position: relative;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 左侧（名称等）项目名称字体 样式 */
+  .ProjectCard-Data-Left-Name-Text {
+    /* 项目名称字体 样式 */
+  
+    width: 90px;
+    height: 70px;
+  
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height */
+  
+  
+    /* 主灰色 */
+  
+    color: #424242;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    /* order: 0; */
+    position: absolute;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 左侧（名称等）项目区域、时间 结构 样式 */
+  .ProjectCard-Data-Left-Time-Structure {
+    /* Frame 7 */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 1px;
+  
+    width: 100%;
+    height: 5px;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    position: relative;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 左侧（名称等）项目时间 位置结构（上） 样式 */
+  .ProjectCard-Data-Left-DetailText-Above {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 86px 0px 0px;
+    gap: 5px;
+    width: 100%;
+    height: 14px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 左侧（名称等）项目时间 位置结构（上）icon 样式 */
+  .ProjectCard-Data-Left-DetailText-Above-icon{
+  /* bxs:time-five */
+  
+  
+  width: 12px;
+  height: 12px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 左侧（名称等）项目区域 位置结构（下） 样式 */
+  .ProjectCard-Data-Left-DetailText-Below {
+    /* Time */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 86px 0px 0px;
+    gap: 5px;
+  
+    width: 100%;
+    height: 14px;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  
+  }
+  
+  /* 项目卡片 数据 列 左侧（名称等）项目区域 位置结构（下）icon 样式 */
+  .ProjectCard-Data-Left-DetailText-Below-icon{
+  /* 游玩ICON */
+  
+  
+  width: 12px;
+  height: 12px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 左侧（名称等）项目区域、时间 字体 样式 */
+  .ProjectCard-Data-Left-Detail-Text {
+    /* Time */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 86px 0px 0px;
+    gap: 5px;
+  
+    width: 100px;
+    height: 14px;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    /* order: 0; */
+    position: relative;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 右侧（客流量数据等） 样式 */
+  .ProjectCard-Data-Right-List {
+    /* Data */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+  
+    width: 155px;
+    height: 60px;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    position: relative;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 右侧（客流量数据等）客流量结构（上） 样式 */
+  .ProjectCard-Data-Right-Guest-Structure-Above {
+    /* 实时客流量 */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+  
+    width: 155px;
+    height: 26px;
+  
+    background: rgba(7, 193, 96, 0.15);
+    border-radius: 5px;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 右侧（客流量数据等）预计等待时间结构（下） 样式 */
+  .ProjectCard-Data-Right-Time-Structure-Below {
+    /* 预计等待时间 */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+  
+    width: 155px;
+    height: 26px;
+  
+    background: rgba(7, 193, 96, 0.15);
+    border-radius: 5px;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 右侧（客流量数据等）字体 样式 */
+  .ProjectCard-Data-Right-Text {
+    /* 项目卡片 数据 列 右侧（客流量数据等）字体 样式 */
+  
+  
+    width: 92px;
+    height: 13px;
+  
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+  
+    /* 确认 */
+  
+    color: #07C160;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 实时客流量 icon 框架 样式 */
+  .ProjectCard-Data-Right-Guest-icon-Frame{
+    /* People */
+  
+  
+  width: 30px;
+  height: 17px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  
+  /* 项目卡片 预计等待时间 icon 框架 样式 */
+  .ProjectCard-Data-Right-Time-icon-Frame{
+    /* Time */
+  
+  
+  width: 30px;
+  height: 17px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }

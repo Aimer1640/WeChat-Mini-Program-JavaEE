@@ -1,0 +1,474 @@
+/* 页面背景色 */
+
+page {
+  background: #007D68
+}
+
+/* 主体结构 */
+.Body {
+/* Body */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 390px;
+height: 100%;
+left: 0px;
+top: 20px;
+
+}
+.map{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 项目搜索栏、回到当前位置、3D导览功能区 容器 样式 */
+.TopRibbon-Container{
+  /* Frame 6 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 39px;
+
+position: absolute;
+width: 350px;
+height: 185px;
+left: 20px;
+top: 20px;
+
+}
+
+/* 回到当前位置、3D导览 容器 样式 */
+.FunctionButton-Container{
+  /* Circle Button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 45px;
+height: 106px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 回到当前位置按钮 容器 样式 */
+.PositionButton-Container{
+  /* Circle Button */
+
+
+width: 45px;
+height: 45px;
+
+
+/* Inside auto layout */
+
+flex: none;
+/* order: 0; */
+position: relative;
+flex-grow: 0;
+}
+
+/* 回到当前位置按钮 icon所在方位 样式 */
+.PositionButton-Icon-Position{
+  position: absolute;
+left: 22%;
+right: 22%;
+top: 22%;
+bottom: 22%;
+
+  width: 25.2px;
+  height: 25.2px;
+}
+
+/* 3D导览按钮 容器 样式 */
+.GuideButton-Container{
+  /* Circle Button */
+
+
+width: 45px;
+height: 45px;
+
+
+/* Inside auto layout */
+
+flex: none;
+/* order: 1; */
+position: relative;
+flex-grow: 0;
+}
+
+/* 3D导览按钮 icon所在方位 样式 */
+.GuideButton-Icon-Position{
+
+
+position: absolute;
+width: 22px;
+height: 14px;
+left: 12px;
+top: 15px;
+}
+
+/* 回到当前位置、3D导览功能按钮 背景 样式 */
+.FunctionButton-Background{
+  /* Rectangle 450 */
+
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+/* Sha1 */
+
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}
+
+/* 项目搜索栏 容器 样式 */
+.SearchBar-Container{
+  /* Search */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 20px;
+gap: 10px;
+
+width: 350px;
+height: 40px;
+
+background: #FFFFFF;
+/* Sha1 */
+
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 景点类别 容器 样式 */
+.AttractionType-Container{
+  /* Frame 9 */
+
+
+position: absolute;
+width: 350px;
+height: 114px;
+left: 20px;
+bottom: 0px;
+
+background: #FFFFFF;
+/* Sha1 */
+
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px 10px 0px 0px;
+}
+
+/* 景点类别 按钮 容器 样式 */
+.AttractionType-Button-Container{
+/* Button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px 22px;
+gap: 10px;
+
+position: absolute;
+width: 350px;
+height: 59px;
+left: 0px;
+top: 16px;
+
+}
+
+/* 景点类别按钮 （两字） 字体 样式 */
+.AttractionType-Button-Text{
+  /* 饮食 */
+  
+  
+  width: 24px;
+  height: 17px;
+  
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  /* identical to box height */
+  
+  
+  /* 主灰色 */
+  
+  color: #424242;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  }
+
+/* 饮食按钮 容器 样式 */
+.AttractionType-Food-Button-Container{
+/* Button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 3px;
+
+width: 36px;
+height: 59px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 购物按钮 容器 样式 */
+.AttractionType-Shop-Button-Container{
+  /* Button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 3px;
+
+width: 36px;
+height: 59px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 游玩按钮 容器 样式 */
+.AttractionType-Attractions-Button-Container{
+  /* Button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 3px;
+
+width: 36px;
+height: 59px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 3;
+flex-grow: 0;
+}
+
+/* 卫生间按钮 容器 样式 */
+.AttractionType-WC-Button-Container{
+  /* Button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 3px;
+
+width: 36px;
+height: 59px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 4;
+flex-grow: 0;
+}
+
+/* 卫生间按钮 字体 样式 */
+.AttractionType-WC-Button-Text{
+  /* 卫生间 */
+
+
+width: 36px;
+height: 17px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 17px;
+/* identical to box height */
+
+
+/* 主灰色 */
+
+color: #424242;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 景点类别栏 按钮 icon 框架 */
+.AttractionType-Little-Button-Icon-Frame{
+/* ICON */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 24px;
+height: 40px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 景点类别栏 按钮 icon */
+.AttractionType-Little-Button-Icon{
+/* map:toilet */
+
+
+width: 24px;
+height: 24px;
+
+}
+
+/* 智能游玩路线按钮 容器 样式 */
+.AttractionType-Route-Button-Container{
+/* Button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 3px;
+
+width: 79px;
+height: 59px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+
+/* 智能游玩路线按钮 icon 样式 */
+.AttractionType-Route-Button-Icon{
+  /* Pathfinder */
+
+
+position: absolute;
+width: 103px;
+height: 110px;
+left: 123px;
+top: -46px;
+
+/* Sha1 */
+
+filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+}
+
+/* 智能游玩路线按钮 字体 样式 */
+.AttractionType-Route-Button-Text{
+  /* 智能游玩路线 */
+
+
+width: 72px;
+height: 17px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 17px;
+/* identical to box height */
+
+
+/* 主灰色 */
+
+color: #424242;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}

@@ -1,0 +1,228 @@
+<!-- 主体结构 使用figma样式-->
+<view class="Body">
+  <!-- 次主体结构 使用figma样式-->
+  <view class="RealBody">
+    <map 
+    subkey="BTMBZ-K566F-XTLJ2-JJDIC-KRYJQ-XABNX"
+    layer-style="1"
+    class="map" 
+    id="mapId"
+    markers="{{markers}}" 
+    polyline="{{polyline}}"
+    longitude="113.330389" 
+    latitude="22.998989"  
+    scale="16" 
+    bindmarkertap="handleMarkerTap" 
+    show-location='true'>
+    </map>
+    <!-- 项目搜索栏、回到当前位置、3D导览功能区 -->
+    <view class="TopRibbon-Container">
+      <!-- 项目搜索栏 -->
+      <view class="SearchBar-Container">
+        <text class="cuIcon-search"></text>
+        <input type="text" placeholder="搜索项目" confirm-type="search"></input>
+      </view>
+      <!-- 回到当前位置、3D导览按钮 -->
+      <view class="FunctionButton-Container">
+        <view class="PositionButton-Container">
+          <view class="FunctionButton-Background" bindtap="moveTolocation">
+            <image class="PositionButton-Icon-Position" src="/images/PositionButton.png"></image>
+          </view>
+        </view>
+        <view class="GuideButton-Container">
+          <view class="FunctionButton-Background" bindtap="open1"  show="{{road}}">
+            <image class="GuideButton-Icon-Position" src="/images/map_route.png"></image>
+        </view>
+        </view>
+      </view>
+    </view>
+
+  </view> <!-- 次主体结构结束 使用figma样式-->
+
+</view><!-- 主体结构结束 使用figma样式-->
+
+<!-- 地图弹窗-->
+<mp-halfScreenDialog show="{{showDialog}}" style="height: 800rpx;">
+    <view slot="title">{{currentMarker.name}}</view>
+    <view slot="desc">
+      <cover-image class="refresh" bindtap="connectMysql" src="/images/refresh.png"></cover-image>
+
+
+                  <view wx:if="{{currentMarker.WaittingCustomers>=300}}">
+                   <view>
+                    <image src="/images/lineRed.png" class="rwor"></image>
+                    <!-- <text class="number">当前景点人数（人）：</text> -->
+                    <view class="rword">排队人数:{{currentMarker.WaittingCustomers}}人 预计等待{{currentMarker.TotalWaittingTime}}分钟</view>
+                    <button class="red" style="width: 750rpx; height: 100rpx;"></button>
+                   </view>
+                   <view>
+                    <!-- <image src="/images/walker1.png" class="wor"></image> -->
+                     
+                   </view>
+                  </view>
+                  
+                  <!-- 较为拥堵警告 -->
+                  <view wx:elif="{{currentMarker.WaittingCustomers>=200}}">
+                    <image src="/images/lineYellow.png" class="rwor"></image>
+                    <!-- <text class="number">当前景点人数（人）：</text> -->
+                    <view class="yword">排队人数:{{currentMarker.WaittingCustomers}}人 预计等待{{currentMarker.TotalWaittingTime}}分钟</view>
+                    <button class="yel" style="width: 750rpx; height: 100rpx;"></button> 
+                  </view>
+                  
+                  <!-- 推荐游玩警告 -->
+                  <view wx:else>
+                    <image src="/images/lineGreen.png" class="rwor"></image>
+                    <!-- <text class="number">当前景点人数（人）：</text> -->
+                    <view class="gword">排队人数:{{currentMarker.WaittingCustomers}}人 预计等待{{currentMarker.TotalWaittingTime}}分钟</view>
+                    <button class="gel" style="width: 750rpx; height: 100rpx;"></button> 
+                  </view>
+      <!-- 景点名称:{{currentMarker.name}} -->
+      <sroll-view>
+  
+        <view class="tied">
+          <view class="fontStyle"></view>
+          <view wx:for="{{numberList}}" wx:for-item="item_num">
+            <view wx:for="{{item_num}}" wx:for-item="item_number">
+              <view wx:if="{{item_number.Device==currentMarker.id}}">
+                  <!-- <view class="fontStyle">{{item_number.WaittingCustomers}}</view> -->
+
+                  <!-- 过于拥堵警告 -->
+                  <view wx:if="{{item_number.WaittingCustomers>=3000}}">
+                   <view>
+                    <image src="/images/lineRed.png" class="rwor"></image>
+                    <!-- <text class="number">当前景点人数（人）：</text> -->
+                    <view class="rword">排队人数:{{item_number.WaittingCustomers}}人 预计等待{{item_number.TotalWaittingTime}}分钟</view>
+                    <button class="red" style="width: 750rpx; height: 100rpx;"></button>
+                   </view>
+                   <view>
+                    <!-- <image src="/images/walker1.png" class="wor"></image> -->
+                     
+                   </view>
+                  </view>
+                  
+                  <!-- 较为拥堵警告 -->
+                  <view wx:elif="{{item_number.WaittingCustomers>=2000}}">
+                    <image src="/images/lineYellow.png" class="rwor"></image>
+                    <!-- <text class="number">当前景点人数（人）：</text> -->
+                    <view class="yword">排队人数:{{item_number.WaittingCustomers}}人 预计等待{{item_number.TotalWaittingTime}}分钟</view>
+                    <button class="yel" style="width: 750rpx; height: 100rpx;"></button> 
+                  </view>
+                  
+                  <!-- 推荐游玩警告 -->
+                  <view wx:else>
+                    <image src="/images/lineGreen.png" class="rwor"></image>
+                    <!-- <text class="number">当前景点人数（人）：</text> -->
+                    <view class="gword">排队人数:{{item_number.WaittingCustomers}}人 预计等待{{item_number.TotalWaittingTime}}分钟</view>
+                    <button class="gel" style="width: 750rpx; height: 100rpx;"></button> 
+                  </view>
+              </view>
+              
+            </view>
+          </view>
+        </view>
+  
+  
+        <view class="tied">
+          <view class="fontStyle"></view>
+          <view wx:for="{{numberList}}" wx:for-item="item_num">
+            <view wx:for="{{item_num}}" wx:for-item="item_number">
+              <view wx:if="{{item_number.Device==currentMarker.id}}">
+                  <!-- <view class="fontStyle">{{item_number.TotalWaittingTime}}</view> -->
+              </view>
+            </view>
+          </view>
+        </view>
+
+
+      </sroll-view>
+    </view>
+    <view slot="footer"></view>
+</mp-halfScreenDialog>
+
+
+<view class="fadeIn" wx:if="{{dialog1}}">
+        <view class="weui-mask" bindtap="close"></view>
+        <view class="weui-half-screen-dialog">
+            <view class="weui-half-screen-dialog__hd">
+                <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                    <a class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></a>
+                </view>
+                <view class="weui-half-screen-dialog__hd__main">
+                    <strong class="weui-half-screen-dialog__title">智能推荐路线</strong>
+                </view>
+            </view>
+
+         <view class="weui-half-screen-dialog__bd" style="padding-top:32px;height:50px;white-space: nowrap;">
+           <view class="SmartRoute-Body">
+
+      <!-- 推荐游玩路线 标题 容器 -->
+            <view class="RouteDetails-TopText-Conrainer">
+             <view class="RouteDetails-TopText-AutoFrame">
+              <view class="RouteDetails-TopText-Frame">
+               
+               <view class="RouteDetails-TopText">路线名称</view>
+               <view class="RouteDetails-TopText-Introduction">已选择 - 智能推荐路线</view>
+                 
+              </view>
+             </view>
+            </view>
+                  <!-- 路线详情路线 卡片 容器 -->
+      <view class="RouteDetails-Card-Conrainer">
+        <!-- 图片 列 框架 -->
+        <view class="RouteDetails-Card-Picture-List"><image class="MapPage-Button-Icon" src="/images/Uskateboard.jpg"></image></view>
+        <!-- 标题、标签 列 框架 -->
+        <view class="RouteDetails-Card-Introduction-List">
+          <!-- 标题框架 -->
+          <view class="RouteDetails-Card-Introduction-Row-RouteDetailsTopText">智能推荐路线</view>
+          <!-- 标签框架 -->
+          <view class="RouteDetails-Card-Introduction-Row-Label-Frame">
+            <view class="RouteDetails-Card-Introduction-Row-WaitLabel-Background">
+              <text class="RouteDetails-Card-Introduction-Row-WaitLabel-Text">等待短</text>
+            </view>
+            <view class="RouteDetails-Card-Introduction-Row-ProjectLabel-Background">
+              <text class="RouteDetails-Card-Introduction-Row-ProjectLabel-Text">项目较多</text>
+            </view>
+          </view>
+        </view>
+        <!-- 标题、标签 列 框架 -->
+        <view class="RouteDetails-Card-Introduction-List-Detail-Frame">
+          <view class="RouteDetails-Card-Introduction-Row-Detail-Amount-Frame">
+            <view class="RouteDetails-Card-Introduction-Row-Detail-Amount-Text">游玩项目 15 个</view>
+          </view>
+          <view class="RouteDetails-Card-Introduction-Row-Detail-Time-Frame">
+            <view class="RouteDetails-Card-Introduction-Row-Detail-Time-Text">游玩时间 4.6 小时</view>
+          </view>
+        </view>
+      </view>
+            <!-- 开始游玩导航 按钮 -->
+      <button class="RouteDetails-Button">
+        <text class="RouteDetails-Button-Text" bindtap="ToRoutePage">开始游玩导航</text>
+      </button>
+      <view class="dbshow" wx:for="{{markers}}" wx:key="id">
+              <view class="list">
+                <image src="/images/Point.png" class="point"></image>
+                <image src="/images/Line.png" class="line"></image>
+                
+              </view>
+              <view class="sigthinfom">
+                <view class="sigthname">{{item.title}}</view>
+                <view class="sigthdetail">
+                  <text decode="{{true}}">{{item.waittime}}&nbsp;&nbsp;</text>|
+                  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;水上世界F区域</text>
+                </view>
+
+              </view>
+              
+           </view>
+     
+
+    </view>
+    
+    </view>
+        
+           
+        </view>
+     
+</view>
+    <!-- 弹窗结束-->
+

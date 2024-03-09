@@ -1,0 +1,94 @@
+page {
+  padding-bottom: 50rpx;
+  background: -webkit-linear-gradient(top, #f8f4f8 0%,#CCCCCC 100%);
+  background: -o-linear-gradient(top, #eee6ee 0%,#CCCCCC 100%);
+  background: -ms-linear-gradient(top, #ebdfeb 0%,#CCCCCC 100%);
+  background: linear-gradient(to bottom, #f0e1f0 0%,#cde2f8 100%);
+}
+
+.header {
+  padding: 0 25rpx;
+  padding-top: 40rpx;
+  padding-bottom: 50rpx;
+  width: 100%;
+}
+
+.iimg{
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 10rpx;
+  top: 10rpx;
+  position: relative;
+}
+
+.user_box {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  width: 94%;
+  height: 115px;
+  background: rgba(255,255,255,0.7);
+}
+
+
+.logo {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.logo image {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  will-change: transform;
+}
+
+.user_name {
+  display: flex;
+  align-items: center;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #fff;
+}
+
+.user_name image {
+  margin-left: 16rpx;
+  width: 84rpx;
+  height: 31rpx;
+}
+
+.headname{
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.nav {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 20px;
+  font-size: 34rpx;
+  background: rgba(255,255,255,0.7);
+  width: 94%;
+}
+
+.nav .item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 30rpx 0;
+}
+
+.wallet{
+    display: flex;
+    justify-content: space-between;
+}
+

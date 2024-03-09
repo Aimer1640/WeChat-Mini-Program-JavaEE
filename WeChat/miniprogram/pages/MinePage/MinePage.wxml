@@ -1,0 +1,53 @@
+<view class="header">
+    <view class="user_box" bindtap='joinVip'>
+      <view class="logo">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data class='headname' type="userNickName"></open-data>
+    </view>
+  <view class="nav">
+
+    <view class="item">
+      <view class='wallet'>
+        <text class='icon-moneybag icon'></text>
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
+        <image src='../../images/fenxi.png' class='iimg'></image>
+        <text>问卷调查</text>
+      </view>
+    </view>
+
+    <view class="item" bindtap="showfeedback">
+      <view class='wallet'>
+      <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
+      <image src='../../images/yijian.png' class='iimg'></image>
+      <text>意见反馈</text></view>
+    </view>
+
+    <view class="item">
+      <view class='wallet'>
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
+        <image src='../../images/guanyu.png' class='iimg'></image>
+        <text>关于我们</text>
+      </view>
+    </view>
+
+    <view class="item">
+      <view class='wallet'>
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
+        <image src='../../images/kefu.png' class='iimg'></image>
+        <text>联系客服</text>
+        <text space="emsp">      400-xxx-4000</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view wx:for="{{numberList}}" wx:for-item="item_num">
+  <view wx:for="{{item_num}}" wx:for-item="item_number">
+        <view>{{item_number.Device}}</view>
+        <view>{{item_number.Time}}</view>
+        <view>{{item_number.Number}}</view>
+  </view>
+    
+</view>
+ <!-- <button bindtap="connectMysql" type="primary">链接mysql数据库</button> -->

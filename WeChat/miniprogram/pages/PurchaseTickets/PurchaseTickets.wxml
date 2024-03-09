@@ -1,0 +1,88 @@
+<!--pages/PurchaseTickets/PurchaseTickets.wxml-->
+<view class="cu-bar bg-white margin-top solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-orange"></text> 景点信息
+  </view>
+</view>
+<scroll-view scroll-x class="bg-white nav">
+  <view class="flex text-center">
+    <view class="cu-item flex-sub {{index==TabCur?'text-orange cur':''}}" wx:for="{{navTab}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+      {{item}}
+    </view>
+  </view>
+</scroll-view>
+
+<view class="cu-list menu sm-border">
+  <block wx:for="{{orderlist}}" wx:key="index" wx:if="{{openid}}=={{item._openid}}">
+    <view class="cu-item ">
+      
+      <view class="content" style="width: 300px;">
+        <!-- <view class="text-df text-blue">购票:{{item.name}}</view> -->
+        <view class="text-df text-blue">游玩项目名称:{{item.title}}</view>
+        <view class="text-df text-blue">购买张数:{{item.num}}
+          <block wx:if='{{item.step==4}}'>
+            <text class="text-red">(用户评价:{{item.score}}星)</text>
+          </block>
+        </view>
+        <!-- <block wx:if="{{item.step==2}}">
+          <view class="text-df text-blue">派单时间:{{item.completetime}}</view>
+        </block>
+        <block wx:elif="{{item.step>=3}}">
+          <view class="text-df text-blue">完成时间:{{item.completetime}}</view>
+        </block> -->
+      </view>
+      
+      <view class="action">
+        <view style='flex-basis: 15%;justify-content:center;' bindtap="orderdetail" data-index='{{index}}' data-id='{{item._id}}'>
+          <button class="cu-btn round bg-green " style="width: 100px;">查看详情</button>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+
+
+<view class="cu-list menu sm-border">
+  <block wx:for="{{markers}}">
+    <view class="cu-item ">
+     
+      <view class="content" style="width: 260px;"> 
+        <view class="ProjectCard">
+         <!-- 项目图片 -->
+         <view class="ProjectCard-Picture">
+           <image src="{{item.sigthimg}}" class="sigthimg" bindtap="toSigth" data-sigth-id="{{item.id}}"></image>
+         </view>
+         <!-- 项目数据 -->
+         <view class="ProjectCard-Data-Container">
+        <!-- 项目时间、区域 显示容器 -->
+        <view class="ProjectCard-Data-Left-List">
+          <view class="ProjectCard-Data-Left-Name-Text" style="font-size: 15px;">{{item.title}}</view>
+          <view class="ProjectCard-Data-Left-Time-Structure">
+            <view class="ProjectCard-Data-Left-DetailText-Above">
+              <text class="ProjectCard-Data-Left-Detail-Text">9:00 - 19:00</text>
+            </view>
+          </view>
+        </view>
+        <!-- 项目数据 显示容器 -->
+        <view class="ProjectCard-Data-Right-List">
+          <view class="ProjectCard-Data-Right-Guest-Structure-Above">
+            <image class="ProjectCard-Data-Right-Guest-icon-Frame" src="/images/status=less.png"></image>
+            <view class="ProjectCard-Data-Right-Text">实时游客数量：较少</view>
+          </view>
+          <view class="ProjectCard-Data-Right-Time-Structure-Below">
+            <image class="ProjectCard-Data-Right-Time-icon-Frame" src="/images/status=immediately.png"></image>
+            <text class="ProjectCard-Data-Right-Text">预计等待时间：立刻</text>
+          </view>
+        </view>
+         </view>
+      
+        </view>
+      </view>
+      
+      <view class="action">
+          <button class="cu-btn round bg-green" style="width: 90px;" bindtap="toSubmissionOrder" data-sigth-id="{{item.id}}">购买</button>
+        
+      </view>
+    </view>
+  </block>
+</view>

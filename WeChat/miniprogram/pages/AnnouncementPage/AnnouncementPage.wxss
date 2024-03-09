@@ -1,0 +1,247 @@
+/* 页面背景色 */
+page {
+  background: #007D68
+}
+
+/* 主体结构 */
+.Body {
+/* Body */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 390px;
+height: 762px;
+left: 0px;
+top: 20px;
+
+}
+
+/* 次主体结构 */
+.RealBody {
+  /* Real Body */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+
+  width: 390px;
+  height: 100%;
+
+  background: #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  /* order: 1; */
+  position: relative;
+  flex-grow: 0;
+}
+
+/* 项目搜索栏 容器 样式 */
+.SearchBar-Container{
+  /* Search */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 20px;
+gap: 10px;
+
+width: 350px;
+height: 40px;
+
+background: #FFFFFF;
+/* Sha1 */
+
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 公告卡片 容器 样式 */
+.AnnouncementCard-Container{
+  /* 卡片/默认 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px 20px;
+gap: 20px;
+
+width: 350px;
+height: 140px;
+
+background: #FFFFFF;
+/* Sha1 */
+
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 公告文字 容器 样式 */
+.Announcement-Text-Container{
+  /* TEXT */
+
+
+width: 310px;
+height: 105px;
+
+
+/* Inside auto layout */
+
+flex: none;
+/* order: 0; */
+position: relative;
+flex-grow: 0;
+}
+
+/* 公告标题及发布时间 容器 样式 */
+.Announcement-TopText-Container{
+/* Frame 5 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 310px;
+height: 34px;
+left: 20px;
+top: 17.5px;
+}
+
+/* 公告标题 字体 样式 */
+.Announcement-TopText{
+/* 关于暂停“水上飞车”区域开放的通告 */
+
+
+width: 311px;
+height: 20px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* 主灰色 */
+
+color: #424242;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 公告标题 字体 样式 */
+.Announcement-TimeText{
+/* 2022/08/32 12:00:00 */
+
+
+width: 311px;
+height: 14px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* 灰色 */
+
+color: #9D9D9D;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 公告内容 容器 样式 */
+.Announcement-ContentText-Container{
+  /* Frame 5 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: relative;
+width: 310px;
+height: 60px;
+left: 0px;
+top: 10px;
+
+}
+
+
+/* 公告内容 字体 样式 */
+.Announcement-ContentText{
+/* 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测测... */
+
+
+position: static;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 17px;
+display: flex;
+align-items: center;
+
+/* 灰色 */
+
+color: #9D9D9D;
+}

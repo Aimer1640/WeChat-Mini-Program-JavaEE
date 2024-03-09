@@ -1,0 +1,6 @@
+
+{
+  "usingComponents": {"mp-halfScreenDialog": "weui-miniprogram/half-screen-dialog/half-screen-dialog"},
+  "navigationBarTitleText": "智慧导航"
+
+}

@@ -1,0 +1,48 @@
+<!-- 主体结构 使用figma样式-->
+<view class="Body">
+    <!-- 次主体结构 使用figma样式-->
+    <view class="RealBody">
+      <!-- 轮播图容器 -->
+      <view class="Carousel-Container">
+      
+      </view>
+      <!-- 介于轮播图和图标的中间部分容器 -->
+      <view class="AttractionsDetails-Container">
+        <view class="AttractionsTop-Row-Container">
+          <view class="AttractionsTop-Row">
+            <view class="Attractions-Name-TopText">大摆锤</view>
+            <view class="Attractions-BottomText-Row-Container">
+              <view class="Attractions-Time-Row">
+                <view class="Attractions-TimeText">9:00 - 19:00</view>
+              </view>
+              <view class="Attractions-Area-Row">
+                <view class="Attractions-AreaText">水上世界 F区域</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="Attention-Container">
+          <view class="Attention-Row">
+            <view class="Attention-Text">孕妇，儿童和老弱病残游客请勿游玩</view>
+          </view>
+        </view>
+        <view class="Attractions-Data-Container">
+          <view class="Attractions-Guest-Row">
+            <view class="Attractions-Guest-Text">实时游客数量：较少</view>
+          </view>
+          <view class="Attractions-WaitTime-Row">
+            <view class="Attractions-WaitTime-Text">预计等待时间：立刻</view>
+          </view>
+        </view>
+      </view>
+      <!-- 人流量图表容器 -->
+      <view class="Attractions-Chart-Container">
+        <view class="Attractions-Chart-Row">
+          <view class="Attractions-Chart-TopText">今日人流量</view>
+          <view class="Attractions-Chart">
+
+          </view>
+        </view>
+      </view>
+    </view>
+</view>

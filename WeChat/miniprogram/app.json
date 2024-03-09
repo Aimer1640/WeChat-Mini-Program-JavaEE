@@ -1,0 +1,52 @@
+{
+    "pages": [
+        "pages/auth/auth",
+        "pages/MinePage/MinePage",
+        "pages/PurchaseTickets/PurchaseTickets",
+        "pages/SubmissionOrder/SubmissionOrder",
+        "pages/FrontPage/FrontPage",
+       
+        "pages/RoutePage/RoutePage",
+        "pages/testPage/testPage",
+        "pages/PassengerFlowPage/PassengerFlowPage",
+        "pages/AttractionsListPage/AttractionsListPage",
+        "pages/AttractionsDetailPage/AttractionsDetailPage",
+        "pages/BusinessHoursPage/BusinessHoursPage",
+        "pages/AnnouncementPage/AnnouncementPage",
+        "pages/SmartRoutePage/SmartRoutePage",
+        "pages/MapPage/MapPage",
+        "pages/SigthDetail/SigthDetail",
+        "pages/OrderDetail/OrderDetail"
+    ],
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/FrontPage/FrontPage",
+                "text": "游玩",
+                "iconPath": "/images/play.png",
+                "selectedIconPath": "/images/play.png"
+            },
+            {
+                "pagePath": "pages/MapPage/MapPage",
+                "text": "智慧导航",
+                "iconPath": "/images/MAP.png",
+                "selectedIconPath": "/images/MAP.png"
+            },
+            {
+                "pagePath": "pages/MinePage/MinePage",
+                "text": "我的",
+                "iconPath": "/images/my.png",
+                "selectedIconPath": "/images/my.png"
+            }
+        ]
+    },
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#007D68",
+        "navigationBarTitleText": "悦游 AmuPark",
+        "navigationBarTextStyle": "white"
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}

@@ -1,0 +1,27 @@
+<!--pages/OrderDetail/OrderDetail.wxml-->
+<view class="cu-list menu-avatar">
+    <view class="cu-item">
+      <view class="cu-avatar round lg" style="background-image:url({{order.avatarUrl}});"></view>
+      <view class="content flex-sub">
+        <view>{{order.author}}</view>
+        <view class="text-gray text-sm flex justify-between">
+          {{order.date}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">
+      景点名称:</view>
+    <input placeholder="{{order.title}}" value='{{order.title}}' disabled></input>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">购买张数:</view>
+    <input placeholder="{{order.num}}" value='{{order.num}}' disabled></input>
+  </view>
+
+
+ <view class="flex padding justify-center">
+      <button style="color:  #007D68;" bindtap="cancel">取消订单</button>
+      <button style="color:  #007D68;" bindtap="complete">完成订单</button>
+ </view>

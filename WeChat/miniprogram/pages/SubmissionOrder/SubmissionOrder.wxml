@@ -1,0 +1,23 @@
+<!--pages/SubmissionOrder/SubmissionOrder.wxml-->
+<form bindsubmit="formSubmit">
+  	<view class="cu-form-group">
+		<view class="title"><text class="text-red">*</text>景点名称：</view>
+		<input name="title" placeholder="{{sigth.title}}" value="{{sigth.title}}"></input>
+	</view>
+  <view class="cu-form-group align-start">
+		<view class="title">
+      <text class="text-red">*</text>购买张数：</view>
+		<textarea maxlength="-1" name="num" placeholder="请输入购买张数"></textarea>
+  </view>
+<!-- 
+    <view class="cu-form-group align-start">
+		<view class="title">
+      <text class="text-red">*</text>购买张数：</view>
+		<textarea maxlength="-1" name="content" placeholder="请输入购买张数"></textarea>
+  </view> -->
+
+  <view class="padding flex flex-direction">
+    <button style="color:  #007D68;" form-type="submit">确认购买</button>
+  </view>
+
+</form>

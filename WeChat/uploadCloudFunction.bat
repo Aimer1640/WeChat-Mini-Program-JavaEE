@@ -1,0 +1,1 @@
+"D:\Software\WXProgarm\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-8gpplkhc84a4360f --n quickstartFunctions --r --project "D:\大学生创新创业 游乐园项目\景区排队系统" --report_first --report

@@ -1,0 +1,126 @@
+<!-- 主体结构 使用figma样式-->
+<view class="Body">
+  <map 
+    subkey="BTMBZ-K566F-XTLJ2-JJDIC-KRYJQ-XABNX"
+    layer-style="1"
+    class="map" 
+    id="mapId"
+    markers="{{markers}}" 
+    longitude="113.330389" 
+    latitude="22.998989"  
+    scale="16" 
+    bindmarkertap="handleMarkerTap" 
+    show-location='true'>
+    </map>
+  <!-- 次主体结构 使用figma样式-->
+  <view class="RealBody">
+    
+    <!-- 项目搜索栏、回到当前位置、3D导览功能区 -->
+    <view class="TopRibbon-Container">
+      <!-- 项目搜索栏 -->
+      <view class="SearchBar-Container">
+        <text class="cuIcon-search"></text>
+        <input type="text" placeholder="搜索项目" confirm-type="search"></input>
+      </view>
+      
+      <!-- 回到当前位置、3D导览按钮 -->
+      <view class="FunctionButton-Container">
+        <view class="PositionButton-Container">
+          <view class="FunctionButton-Background" bindtap="moveTolocation">
+            <image class="PositionButton-Icon-Position" src="/images/PositionButton.png"></image>
+          </view>
+        </view>
+        <view class="GuideButton-Container">
+          <view class="FunctionButton-Background">
+            <image class="GuideButton-Icon-Position" src="/images/GuideButton.png"></image>
+        </view>
+        </view>
+      </view>
+      
+    </view>
+    
+    <!-- 景点类别栏 -->
+    <view class="AttractionType-Container">
+      <view class="AttractionType-Button-Container">
+        <view class="AttractionType-Food-Button-Container">
+          <view class="AttractionType-Little-Button-Icon-Frame">
+            <image class="AttractionType-Little-Button-Icon" src="/images/Food.png"></image>
+          </view>
+          <view class="AttractionType-Button-Text">饮食</view>
+        </view>
+        <view class="AttractionType-Shop-Button-Container">
+          <view class="AttractionType-Little-Button-Icon-Frame">
+            <image class="AttractionType-Little-Button-Icon" src="/images/Shop.png"></image>
+          </view>
+          <view class="AttractionType-Button-Text">购物</view>
+        </view>
+        <view class="AttractionType-Route-Button-Container">
+          <view class="AttractionType-Little-Button-Icon-Frame"></view>
+          <view class="AttractionType-Route-Button-Text">智能游玩路线</view>
+        </view>
+        <view class="AttractionType-Attractions-Button-Container">
+          <view class="AttractionType-Little-Button-Icon-Frame">
+            <image class="AttractionType-Little-Button-Icon" src="/images/Attractions.png" bindtap="PurchaseTickets"></image>
+          </view>
+          <view class="AttractionType-Button-Text">游玩</view>
+        </view>
+        <view class="AttractionType-WC-Button-Container">
+          <view class="AttractionType-Little-Button-Icon-Frame">
+            <image class="AttractionType-Little-Button-Icon" src="/images/WC.png"></image>
+          </view>
+          <view class="AttractionType-WC-Button-Text">卫生间</view>
+        </view>
+      </view>
+      <!-- 智能游玩路线按钮 icon -->
+      <image class="AttractionType-Route-Button-Icon" src="/images/SmartRoutePage.png" bindtap="ShowSmartRoutePage"></image>
+    </view>
+  </view>
+</view>
+
+<!-- 路线选择弹窗 -->
+<mp-halfScreenDialog show="{{dialog1}}" style="height: 800rpx;">
+    <view slot="title">选择游玩路线</view>
+    <view slot="desc">
+     <!-- 推荐游玩路线 -->
+      <view class="SmartRoute-TopText-Conrainer">
+             <view class="SmartRoute-TopText-AutoFrame">
+              <view class="SmartRoute-TopText-Frame">
+               
+               <view class="SmartRoute-TopText">推荐游玩路线</view>
+               <view class="SmartRoute-TopText-Introduction">基于园区实时人流量进行智能推荐</view>
+                
+              </view>
+             </view>
+      </view>
+      <!-- 智能推荐路线 -->
+      <view class="SmartRoute-Card-Conrainer" bindtap="ShowtestPage">
+        <view class="SmartRoute-Card-Picture-List"></view>
+        <view class="SmartRoute-Card-Introduction-List">
+          <view class="SmartRoute-Card-Introduction-Row-SmartRouteTopText">智能推荐路线</view>
+          <!-- 标签框架 -->
+          <view class="SmartRoute-Card-Introduction-Row-Label-Frame">
+            <view class="SmartRoute-Card-Introduction-Row-WaitLabel-Background">
+              <text class="SmartRoute-Card-Introduction-Row-WaitLabel-Text">等待短</text>
+            </view>
+            <view class="SmartRoute-Card-Introduction-Row-ProjectLabel-Background">
+              <text class="SmartRoute-Card-Introduction-Row-ProjectLabel-Text">项目较多</text>
+            </view>
+            <view class="SmartRoute-Card-Introduction-Row-TypeLabel-Background">
+              <text class="SmartRoute-Card-Introduction-Row-TypeLabel-Text">适合拍照</text>
+            </view>
+          </view>
+          <!-- 内容框架 -->
+          <view class="SmartRoute-Card-Introduction-Row-Detail-Frame">
+            <view class="SmartRoute-Card-Introduction-Row-Detail-Amount-Frame">
+              <view class="SmartRoute-Card-Introduction-Row-Detail-Amount-Text">游玩项目 15 个</view>
+            </view>
+            <view class="SmartRoute-Card-Introduction-Row-Detail-Time-Frame">
+              <view class="SmartRoute-Card-Introduction-Row-Detail-Time-Text">游玩时间 4.6 小时</view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+    <view slot="footer"></view>
+</mp-halfScreenDialog>

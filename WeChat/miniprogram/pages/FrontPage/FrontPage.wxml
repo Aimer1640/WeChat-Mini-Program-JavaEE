@@ -1,0 +1,111 @@
+<!-- 主体结构 使用figma样式-->
+<view class="Body">
+
+  <!-- 搜索栏 使用colorui组件库-->
+  <view style=" background: #007D68" class="cu-bar search fixed" background="#007D68">
+    <view class="search-form round">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="搜索景区设施，路线，攻略" confirm-type="search" bindinput="bindSearchKey"></input>
+    </view>
+    <view class="action" style="width: 20%;">
+      <button class="cu-btn bg-green shadow-blur round" bindtap="onNewsSearch">搜索</button>
+    </view>
+  </view>
+
+  <!-- 次主体结构 使用figma样式-->
+  <view class="RealBody">
+    <!-- 游玩助手-->
+    <view class="PlayAssistant-Row">
+      <text class="PlayAssistant-Text">游玩助手</text>
+    </view>
+
+    <!-- 功能按钮栏 -->
+    <view class="FunctionButton-Container">
+      <!-- 实时人流量 -->
+      <view class="PassengerFlowPage-Button-Container" bindtap="ShowPassengerFlowPage">
+        <view class="PassengerFlowPage-Button-Icon-Frame">
+            <image class="PassengerFlowPage-Button-Icon" src="/images/PassengerFlowPage.png"></image>
+        </view>
+        <view class="FunctionButton-Text-five">实时人流量</view>
+      </view>
+      <!-- 项目查看 -->
+      <view class="AttractionsListPage-Button-Container" bindtap="ShowAttractionsListPage">
+        <view class="AttractionsListPage-Button-Icon-Frame">
+          <image class="AttractionsListPage-Button-Icon" src="/images/AttractionsListPage.png"></image>
+        </view>
+        <view class="FunctionButton-Text">项目查看</view>
+      </view>
+      <!-- 智慧导航 -->
+      <view class="MapPage-Button-Container" bindtap="ShowMapPage">
+        <view class="MapPage-Button-Icon-Frame">
+          <image class="MapPage-Button-Icon" src="/images/MapPage.png"></image>
+        </view>
+        <view class="FunctionButton-Text">智慧导航</view>
+      </view>
+      <!-- 营业时间 -->
+      <view class="BusinessHoursPage-Button-Container" bindtap="ShowBusinessHoursPage">
+        <view class="BusinessHoursPage-Button-Icon-Frame">
+          <image class="BusinessHoursPage-Button-Icon" src="/images/BusinessHoursPage.png"></image>
+        </view>
+        <view class="FunctionButton-Text">营业时间</view>
+      </view>
+      <!-- 景区公告 -->
+      <view class="AnnouncementPage-Button-Container" bindtap="ShowAnnouncementPage">
+        <view class="AnnouncementPage-Button-Icon-Frame">
+          <image class="AnnouncementPage-Button-Icon" src="/images/AnnouncementPage.png"></image>
+        </view>
+        <view class="FunctionButton-Text">景区公告</view>
+      </view>
+    </view>
+
+    <!-- 游玩项目 列-->
+    <view class="PlayItems-Row">
+      <Text class="PlayItems-Text">游玩项目</Text>
+      <!-- 查看更多 列 -->
+      <view class="More">
+        <text class="More-Text">查看更多</text>
+        <view class="More-Arrow-Frame">
+          <image class="More-Arrow" src="/images/More-Arrow.png"></image>
+        </view>
+      </view>
+    </view>
+
+    <!-- 项目卡片 -->
+    <view class="ProjectCard" wx:for="{{markers}}"  bindtap="toSigth" data-sigth-id="{{item.id}}">
+      <!-- 项目图片 -->
+      <view class="ProjectCard-Picture">
+      <image src="{{item.sigthimg}}" class="sigthimg"></image>
+       
+      </view>
+      <!-- 项目数据 -->
+      <view class="ProjectCard-Data-Container">
+        <!-- 项目时间、区域 显示容器 -->
+        <view class="ProjectCard-Data-Left-List">
+          <view class="ProjectCard-Data-Left-Name-Text" style="font-size: 15px;">{{item.title}}</view>
+          <view class="ProjectCard-Data-Left-Time-Structure">
+            <view class="ProjectCard-Data-Left-DetailText-Above">
+              <image class="ProjectCard-Data-Left-DetailText-Above-icon" src="/images/OpeningHours.png"></image>
+              <text class="ProjectCard-Data-Left-Detail-Text">9:00 - 19:00</text>
+            </view>
+            <view class="ProjectCard-Data-Left-DetailText-Below">
+              <image class="ProjectCard-Data-Left-DetailText-Below-icon" src="/images/Region.png"></image>
+              <text class="ProjectCard-Data-Left-Detail-Text">{{item.title}}</text>
+            </view>
+          </view>
+        </view>
+        <!-- 项目数据 显示容器 -->
+        <view class="ProjectCard-Data-Right-List">
+          <view class="ProjectCard-Data-Right-Guest-Structure-Above">
+            <image class="ProjectCard-Data-Right-Guest-icon-Frame" src="/images/status=less.png"></image>
+            <view class="ProjectCard-Data-Right-Text">实时游客数量：较少</view>
+          </view>
+          <view class="ProjectCard-Data-Right-Time-Structure-Below">
+            <image class="ProjectCard-Data-Right-Time-icon-Frame" src="/images/status=immediately.png"></image>
+            <text class="ProjectCard-Data-Right-Text">预计等待时间：立刻</text>
+          </view>
+        </view>
+      </view>
+      
+    </view>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.lab_12.mapper.StudentMapper">
+    <!--2040706101 杨艾琳-->
+    <select id="findAllStudents" resultType="Student">
+        select * from tb_student
+    </select>
+    <select id="findStudentByNum" parameterType="Student">
+        select * from tb_student where num = #{num}
+    </select>
+    <!--2040706101 杨艾琳-->
+    <insert id="addStudent" parameterType="Student">
+        insert into tb_student(num,name,gender) values(#{num},#{name},#{gender})
+    </insert>
+    <update id="updateStudent" parameterType="Student">
+        update tb_student set num=#{num},name =#{name},gender=#{gender} where id=#{id}
+    </update>
+    <delete id="deleteStudent" parameterType="string">
+        delete from tb_student where num=#{num}
+    </delete>
+</mapper>

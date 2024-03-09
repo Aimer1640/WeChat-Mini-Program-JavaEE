@@ -1,0 +1,255 @@
+<!-- 主体结构 使用figma样式-->
+<view class="Body">
+  <!-- 次主体结构 使用figma样式-->
+  <map 
+    subkey="BTMBZ-K566F-XTLJ2-JJDIC-KRYJQ-XABNX"
+    layer-style="1"
+    class="map" 
+    id="mapId"
+    markers="{{markers}}" 
+    longitude="113.330389" 
+    latitude="22.998989"  
+    scale="16" 
+    bindmarkertap="handleMarkerTap" 
+    show-location='true'>
+  </map>
+  <view class="RealBody">
+
+    <!-- 项目搜索栏、回到当前位置、3D导览功能区 -->
+    <view class="TopRibbon-Container">
+      <!-- 项目搜索栏 -->
+      <view class="SearchBar-Container">
+        <text class="cuIcon-search"></text>
+        <input type="text" placeholder="搜索项目" confirm-type="search"></input>
+      </view>
+      <!-- 回到当前位置、3D导览按钮 -->
+      <view class="FunctionButton-Container">
+        <view class="PositionButton-Container">
+          <view class="FunctionButton-Background" bindtap="moveTolocation">
+            <image class="PositionButton-Icon-Position" src="/images/PositionButton.png"></image>
+          </view>
+        </view>
+        <view class="GuideButton-Container">
+          <view class="FunctionButton-Background" bindtap="open1"  show="{{road}}">
+            <image class="GuideButton-Icon-Position" src="/images/map_route.png"></image>
+        </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 3d -->
+    <mp-halfScreenDialog show="{{dialog1}}" style="height: 800rpx;">
+    <view slot="title">选择游玩路线</view>
+    <view slot="desc">
+     <!-- 推荐游玩路线 -->
+      <view class="SmartRoute-TopText-Conrainer">
+             <view class="SmartRoute-TopText-AutoFrame">
+              <view class="SmartRoute-TopText-Frame">
+               
+               <view class="SmartRoute-TopText">推荐游玩路线</view>
+               <view class="SmartRoute-TopText-Introduction">基于园区实时人流量进行智能推荐</view>
+                
+              </view>
+             </view>
+      </view>
+      <!-- 智能推荐路线 -->
+      <view class="SmartRoute-Card-Conrainer" bindtap="ShowtestPage">
+        <view class="SmartRoute-Card-Picture-List"><image class="MapPage-Button-Icon" src="/images/Freefall.jpg"></image></view>
+        <view class="SmartRoute-Card-Introduction-List">
+          <view class="SmartRoute-Card-Introduction-Row-SmartRouteTopText">智能推荐路线</view>
+          <!-- 标签框架 -->
+          <view class="SmartRoute-Card-Introduction-Row-Label-Frame">
+            <view class="SmartRoute-Card-Introduction-Row-WaitLabel-Background">
+              <text class="SmartRoute-Card-Introduction-Row-WaitLabel-Text">等待短</text>
+            </view>
+            <view class="SmartRoute-Card-Introduction-Row-ProjectLabel-Background">
+              <text class="SmartRoute-Card-Introduction-Row-ProjectLabel-Text">项目较多</text>
+            </view>
+
+          </view>
+          <!-- 内容框架 -->
+          <view class="SmartRoute-Card-Introduction-Row-Detail-Frame">
+            <view class="SmartRoute-Card-Introduction-Row-Detail-Amount-Frame">
+              <view class="SmartRoute-Card-Introduction-Row-Detail-Amount-Text">游玩项目 15 个</view>
+            </view>
+            <view class="SmartRoute-Card-Introduction-Row-Detail-Time-Frame">
+              <view class="SmartRoute-Card-Introduction-Row-Detail-Time-Text">游玩时间 4.6 小时</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 热门网红路线 -->
+      <view class="SmartRoute-Card-Conrainer" bindtap="ShowtestPage">
+        <view class="SmartRoute-Card-Picture-List"><image class="MapPage-Button-Icon" src="/images/SuperSplash.jpg"></image></view>
+        <view class="SmartRoute-Card-Introduction-List">
+          <view class="SmartRoute-Card-Introduction-Row-HotRouteTopText">热门网红路线</view>
+          <!-- 标签框架 -->
+          <view class="SmartRoute-Card-Introduction-Row-Label-Frame">
+            <view class="SmartRoute-Card-Introduction-Row-WaitLabel-Background">
+              <text class="SmartRoute-Card-Introduction-Row-WaitLabel-Text">等待较短</text>
+            </view>
+            <view class="SmartRoute-Card-Introduction-Row-ProjectLabel-Background">
+              <text class="SmartRoute-Card-Introduction-Row-ProjectLabel-Text">项目多</text>
+            </view>
+            <view class="SmartRoute-Card-Introduction-Row-TypeLabel-Background">
+              <text class="SmartRoute-Card-Introduction-Row-TypeLabel-Text">适合拍照</text>
+            </view>
+          </view>
+          <!-- 内容框架 -->
+          <view class="SmartRoute-Card-Introduction-Row-Detail-Frame">
+            <view class="SmartRoute-Card-Introduction-Row-Detail-Amount-Frame">
+              <view class="SmartRoute-Card-Introduction-Row-Detail-Amount-Text">游玩项目 18 个</view>
+            </view>
+            <view class="SmartRoute-Card-Introduction-Row-Detail-Time-Frame">
+              <view class="SmartRoute-Card-Introduction-Row-Detail-Time-Text">游玩时间 5.8 小时</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 最快游玩路线 -->
+      <view class="SmartRoute-Card-Conrainer" bindtap="ShowtestPage">
+        <view class="SmartRoute-Card-Picture-List"><image class="MapPage-Button-Icon" src="/images/Uskateboard.jpg"></image></view>
+        <view class="SmartRoute-Card-Introduction-List">
+          <view class="SmartRoute-Card-Introduction-Row-QuickRouteTopText">最快游玩路线</view>
+          <!-- 标签框架 -->
+          <view class="SmartRoute-Card-Introduction-Row-Label-Frame">
+            <view class="SmartRoute-Card-Introduction-Row-WaitLabel-Background">
+              <text class="SmartRoute-Card-Introduction-Row-WaitLabel-Text">等待短</text>
+            </view>
+            <view class="SmartRoute-Card-Introduction-Row-ProjectLabel-Background">
+              <text class="SmartRoute-Card-Introduction-Row-ProjectLabel-Text">项目较多</text>
+            </view>
+            <view class="SmartRoute-Card-Introduction-Row-TypeLabel-Background">
+              <text class="SmartRoute-Card-Introduction-Row-TypeLabel-Text">快速游玩</text>
+            </view>
+          </view>
+          <!-- 内容框架 -->
+          <view class="SmartRoute-Card-Introduction-Row-Detail-Frame">
+            <view class="SmartRoute-Card-Introduction-Row-Detail-Amount-Frame">
+              <view class="SmartRoute-Card-Introduction-Row-Detail-Amount-Text">游玩项目 10 个</view>
+            </view>
+            <view class="SmartRoute-Card-Introduction-Row-Detail-Time-Frame">
+              <view class="SmartRoute-Card-Introduction-Row-Detail-Time-Text">游玩时间 1.2 小时</view>
+            </view>
+          </view>
+        </view>
+      </view>
+<!-- 固定游玩路线 -->
+      <view class="SmartRoute-TopText-Conrainer">
+             <view class="SmartRoute-TopText-AutoFrame">
+              <view class="SmartRoute-TopText-Frame">
+               
+               <view class="SmartRoute-TopText">固定游玩路线</view>
+               
+                
+              </view>
+             </view>
+      </view>
+      <!-- 亲子游玩路线 -->
+      <view class="SmartRoute-Card-Conrainer" bindtap="ShowtestPage">
+        <view class="SmartRoute-Card-Picture-List"><image class="MapPage-Button-Icon" src="/images/Tornadostorm.jpg"></image></view>
+        <view class="SmartRoute-Card-Introduction-List">
+          <view class="SmartRoute-Card-Introduction-Row-SmartRouteTopText">亲子游玩路线</view>
+          <!-- 标签框架 -->
+          <view class="SmartRoute-Card-Introduction-Row-Label-Frame">
+            <view class="SmartRoute-Card-Introduction-Row-WaitLabel-Background">
+              <text class="SmartRoute-Card-Introduction-Row-WaitLabel-Text">等待较短</text>
+            </view>
+            <view class="SmartRoute-Card-Introduction-Row-ProjectLabel-Background">
+              <text class="SmartRoute-Card-Introduction-Row-ProjectLabel-Text">项目较多</text>
+            </view>
+            <view class="SmartRoute-Card-Introduction-Row-TypeLabel-Background">
+              <text class="SmartRoute-Card-Introduction-Row-TypeLabel-Text">适合儿童</text>
+            </view>
+          </view>
+          <!-- 内容框架 -->
+          <view class="SmartRoute-Card-Introduction-Row-Detail-Frame">
+            <view class="SmartRoute-Card-Introduction-Row-Detail-Amount-Frame">
+              <view class="SmartRoute-Card-Introduction-Row-Detail-Amount-Text">游玩项目 18 个</view>
+            </view>
+            <view class="SmartRoute-Card-Introduction-Row-Detail-Time-Frame">
+              <view class="SmartRoute-Card-Introduction-Row-Detail-Time-Text">游玩时间 5.8 小时</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      
+
+    </view>
+    <view slot="footer"></view>
+    </mp-halfScreenDialog>
+    
+  </view><!-- 次主体结构结束 使用figma样式-->
+
+</view><!-- 主体结构结束 使用figma样式-->
+
+
+<!-- 弹窗主体 -->
+
+
+<mp-halfScreenDialog show="{{showDialog}}" style="height: 800rpx;">
+    <view slot="title">{{currentMarker.name}}</view>
+    <view slot="desc">
+      <cover-image class="refresh" bindtap="connectMysql" src="/images/refresh.png"></cover-image>
+      <!-- 景点名称:{{currentMarker.name}} -->
+      <sroll-view>
+  
+        <view class="tied">
+          <view class="fontStyle"></view>
+          <view wx:for="{{numberList}}" wx:for-item="item_num">
+            <view wx:for="{{item_num}}" wx:for-item="item_number">
+              <view wx:if="{{item_number.Device==currentMarker.id}}">
+                  <!-- <view class="fontStyle">{{item_number.WaittingCustomers}}</view> -->
+
+                  <!-- 过于拥堵警告 -->
+                  <view wx:if="{{item_number.WaittingCustomers>=3000}}">
+                   <view>
+                    <image src="/images/lineRed.png" class="rwor"></image>
+                    <!-- <text class="number">当前景点人数（人）：</text> -->
+                    <view class="rword">排队人数:{{item_number.WaittingCustomers}}人 预计等待{{item_number.TotalWaittingTime}}分钟</view>
+                    <button class="red" style="width: 750rpx; height: 100rpx;"></button>
+                   </view>
+                   <view>
+                    <!-- <image src="/images/walker1.png" class="wor"></image> -->
+                     
+                   </view>
+                  </view>
+                  
+                  <!-- 较为拥堵警告 -->
+                  <view wx:elif="{{item_number.WaittingCustomers>=2000}}">
+                    <image src="/images/lineYellow.png" class="rwor"></image>
+                    <!-- <text class="number">当前景点人数（人）：</text> -->
+                    <view class="yword">排队人数:{{item_number.WaittingCustomers}}人 预计等待{{item_number.TotalWaittingTime}}分钟</view>
+                    <button class="yel" style="width: 750rpx; height: 100rpx;"></button> 
+                  </view>
+                  
+                  <!-- 推荐游玩警告 -->
+                  <view wx:else>
+                    <image src="/images/lineGreen.png" class="rwor"></image>
+                    <!-- <text class="number">当前景点人数（人）：</text> -->
+                    <view class="gword">排队人数:{{item_number.WaittingCustomers}}人 预计等待{{item_number.TotalWaittingTime}}分钟</view>
+                    <button class="gel" style="width: 750rpx; height: 100rpx;"></button> 
+                  </view>
+              </view>
+              
+            </view>
+          </view>
+        </view>
+  
+  
+        <view class="tied">
+          <view class="fontStyle"></view>
+          <view wx:for="{{numberList}}" wx:for-item="item_num">
+            <view wx:for="{{item_num}}" wx:for-item="item_number">
+              <view wx:if="{{item_number.Device==currentMarker.id}}">
+                  <!-- <view class="fontStyle">{{item_number.TotalWaittingTime}}</view> -->
+              </view>
+            </view>
+          </view>
+        </view>
+
+
+      </sroll-view>
+    </view>
+    <view slot="footer"></view>
+</mp-halfScreenDialog>

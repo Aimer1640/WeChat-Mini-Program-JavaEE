@@ -1,0 +1,791 @@
+/* 页面背景色 */
+page {
+  background: #007D68
+}
+.map{
+  width: 100%;
+  height: 100%;
+}
+/* 主体结构 */
+.Body {
+/* Body */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 390px;
+height: 100%;
+left: 0px;
+top: 20px;
+
+}
+.refresh{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 30rpx;
+  top: 38rpx;
+}
+/* 次主体结构 */
+
+
+/* 项目搜索栏、回到当前位置、3D导览功能区 容器 样式 */
+.TopRibbon-Container{
+  /* Frame 6 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 39px;
+
+position: absolute;
+width: 350px;
+height: 185px;
+left: 20px;
+top: 20px;
+
+}
+
+/* 回到当前位置、3D导览 容器 样式 */
+.FunctionButton-Container{
+  /* Circle Button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 45px;
+height: 106px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 回到当前位置按钮 容器 样式 */
+.PositionButton-Container{
+  /* Circle Button */
+
+
+width: 45px;
+height: 45px;
+
+
+/* Inside auto layout */
+
+flex: none;
+/* order: 0; */
+position: relative;
+flex-grow: 0;
+}
+
+/* 回到当前位置按钮 icon所在方位 样式 */
+.PositionButton-Icon-Position{
+  position: absolute;
+left: 22%;
+right: 22%;
+top: 22%;
+bottom: 22%;
+
+  width: 25.2px;
+  height: 25.2px;
+}
+
+/* 3D导览按钮 容器 样式 */
+.GuideButton-Container{
+  /* Circle Button */
+
+
+width: 45px;
+height: 45px;
+
+
+/* Inside auto layout */
+
+flex: none;
+/* order: 1; */
+position: relative;
+flex-grow: 0;
+}
+
+/* 3D导览按钮 icon所在方位 样式 */
+.GuideButton-Icon-Position{
+position: absolute;
+width: 30px;
+height: 38px;
+left: 7px;
+top: 5px;
+}
+
+/* 回到当前位置、3D导览功能按钮 背景 样式 */
+.FunctionButton-Background{
+  /* Rectangle 450 */
+
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+/* Sha1 */
+
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}
+
+/* 项目搜索栏 容器 样式 */
+.SearchBar-Container{
+  /* Search */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 20px;
+gap: 10px;
+
+width: 350px;
+height: 40px;
+
+background: #FFFFFF;
+/* Sha1 */
+
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 主体 样式 */
+.SmartRoute-Body{
+/* BottomBody */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px 20px;
+gap: 10px;
+
+position: absolute;
+width: 350px;
+height: 555px;
+left: 20px;
+top: 530px;
+
+background: #FFFFFF;
+/* Sha1 */
+
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px 10px 0px 0px;
+}
+
+/* 推荐游玩路线 标题 容器 样式 */
+.SmartRoute-TopText-Conrainer{
+  /* InstText */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+width: 310px;
+height: 41px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 标题 auto框架 样式 */
+.SmartRoute-TopText-AutoFrame{
+  /* Auto-added frame */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 286px;
+height: 34px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 标题 框架 样式 */
+.SmartRoute-TopText-Frame{
+  /* Group 5 */
+
+
+width: 188px;
+height: 34px;
+
+
+/* Inside auto layout */
+
+flex: none;
+/* order: 0; */
+position: relative;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 标题 字体 样式 */
+.SmartRoute-TopText{
+/* 推荐游玩路线 */
+
+
+position: absolute;
+width: 102px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* 主灰色 */
+
+color: #424242;
+}
+
+/* 推荐游玩路线 标题简介 字体 样式 */
+.SmartRoute-TopText-Introduction{
+  /* 基于园区实时人流量进行智能推荐 */
+
+
+position: absolute;
+width: 188px;
+height: 10px;
+left: 0px;
+top: 24px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+display: flex;
+align-items: center;
+
+/* 灰色 */
+
+color: #9D9D9D;
+}
+
+/* 推荐游玩路线 卡片 容器 样式 */
+.SmartRoute-Card-Conrainer{
+  /* 卡片/默认 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 20px;
+
+width: 310px;
+height: 100px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 10px rgba(32, 145, 217, 0.25);
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+/* order: 1; */
+position: relative;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 卡片 图片 列 样式 */
+.SmartRoute-Card-Picture-List{
+  /* Pictures */
+
+
+width: 117px;
+height: 80px;
+
+filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.15));
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 卡片 简介 列 样式 */
+.SmartRoute-Card-Introduction-List{
+/* Text */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 5px;
+
+width: 155px;
+height: 100px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 卡片 简介 行 （智能推荐路线）标题字体 样式 */
+.SmartRoute-Card-Introduction-Row-SmartRouteTopText{
+  /* 智能推荐路线 */
+
+
+width: 120px;
+height: 21px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 21px;
+/* identical to box height */
+
+
+background: linear-gradient(180deg, #1C83C5 0%, #27ABFF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 热门网红路线 卡片 简介 行 （智能推荐路线）标题字体 样式 */
+.SmartRoute-Card-Introduction-Row-HotRouteTopText{
+  /* 热门网红路线 */
+width: 120px;
+height: 21px;
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 21px;
+background: linear-gradient(rgba(225,63,63,1) 0%,rgba(255,145,145,1) 99.99%,rgba(0,0,0,0) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+/* 最快游玩路线 卡片 简介 行 （智能推荐路线）标题字体 样式 */
+.SmartRoute-Card-Introduction-Row-QuickRouteTopText{
+  /* 最快网红路线 */
+width: 120px;
+height: 21px;
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 21px;
+background: linear-gradient(rgba(35,174,218,1) 0%,rgba(34,218,185,1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 卡片 简介 行 标签 框架 样式 */
+.SmartRoute-Card-Introduction-Row-Label-Frame{
+/* Frame 5 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 5px;
+
+width: 90px;
+height: 12px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 卡片 简介 行 等待标签 背景 样式 */
+.SmartRoute-Card-Introduction-Row-WaitLabel-Background{
+/* Frame 5 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 45px;
+height: 12px;
+
+background: rgba(28, 131, 197, 0.2);
+border-radius: 20px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 卡片 简介 行 等待标签 字体 样式 */
+.SmartRoute-Card-Introduction-Row-WaitLabel-Text{
+/* 等待短 */
+
+
+width: fit-content;
+height: 10px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+color: #1C83C5;
+
+
+/* Inside auto layout */
+
+flex: none;
+/* order: 0; */
+position: relative;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 卡片 简介 行 项目标签 背景 样式 */
+.SmartRoute-Card-Introduction-Row-ProjectLabel-Background{
+/* Frame 13 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 45px;
+height: 12px;
+
+background: rgba(0, 125, 104, 0.2);
+border-radius: 20px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 卡片 简介 行 项目标签 字体 样式 */
+.SmartRoute-Card-Introduction-Row-ProjectLabel-Text{
+/* 项目较多 */
+
+
+width: fit-content;
+height: 10px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+color: #007D68;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 卡片 简介 行 类型标签 背景 样式 */
+.SmartRoute-Card-Introduction-Row-TypeLabel-Background{
+  /* Frame 14 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 45px;
+height: 12px;
+
+background: rgba(197, 129, 28, 0.2);
+border-radius: 20px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 卡片 简介 行 类型标签 字体 样式 */
+.SmartRoute-Card-Introduction-Row-TypeLabel-Text{
+/* 适合拍照 */
+
+
+width: fit-content;
+height: 10px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+/* 辅助色2 */
+
+color: #C5811C;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 卡片 简介 行 内容 框架 样式 */
+.SmartRoute-Card-Introduction-Row-Detail-Frame{
+  /* Frame 5 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 135px;
+height: 30px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 4;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 卡片 简介 行 内容 项目个数 框架 样式 */
+.SmartRoute-Card-Introduction-Row-Detail-Amount-Frame{
+/* Frame 5 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 135px;
+height: 14px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 卡片 简介 行 内容 项目个数 字体 样式 */
+.SmartRoute-Card-Introduction-Row-Detail-Amount-Text{
+/* 游玩项目 15 个 */
+
+
+width: 105px;
+height: 14px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+
+/* 灰色 */
+
+color: #9D9D9D;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 卡片 简介 行 内容 项目个数 框架 样式 */
+.SmartRoute-Card-Introduction-Row-Detail-Time-Frame{
+/* Frame 5 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 5px;
+
+width: 120px;
+height: 14px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 推荐游玩路线 卡片 简介 行 内容 项目个数 字体 样式 */
+.SmartRoute-Card-Introduction-Row-Detail-Time-Text{
+/* 游玩时间 4.6 小时 */
+
+
+width: 120px;
+height: 14px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height */
+
+
+/* 灰色 */
+
+color: #9D9D9D;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.MapPage-Button-Icon{
+  position: absolute;
+width: 110px;
+height: 75px;
+top: 0;
+left: 4px;
+
+/* Sha1 */
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}

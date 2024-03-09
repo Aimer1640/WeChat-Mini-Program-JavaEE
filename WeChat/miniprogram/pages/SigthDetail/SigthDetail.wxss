@@ -1,0 +1,504 @@
+/* pages/SigthDetail/SigthDetail.wxss */
+/* pages/show/show.wxss */
+.h2 {
+    font-size: 54rpx;
+    color: #3e3e3e;
+    width: calc(100% - 60rpx);
+    margin: 0 30rpx;
+    display: inline-block;
+    padding: 10rpx 0 0 0;
+    font-weight: bold;
+}
+.catWrap {
+    display: inline-block;
+    font-size: 23rpx;
+    color: #04b32c;
+    vertical-align: middle;
+    width: 70%;
+    margin: 0 30rpx;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.detailsub {
+    font-weight: 600;
+    font-size: 17px;
+}
+.detailtopheader {
+    background-color: #fff;
+}
+.detaininner {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.audio_list {
+    width: 100%;
+}
+
+.audio {
+    width: 100%;
+    padding: 30rpx 0;
+    position: relative;
+}
+.audio .equalizer {
+    width: 85rpx;
+    height: 60rpx;
+    margin-left: 0;
+    padding-right: 23px;
+}
+.detail-top {
+    width: 100%;
+    top: 15px;
+}
+.desc_text {
+    font-size: 26rpx;
+    color: #5C6161;
+    width: calc(100% - 60rpx);
+    display: inline-block;
+    padding: 20rpx 0;
+    line-height: 2;
+    text-justify: inter-word;
+}
+.swiperfather{
+    width: 390px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+/* 项目卡片 数据 容器 样式 */
+.ProjectCard-Data-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  
+    position: absolute;
+    width: 350px;
+    height: 80px;
+    left: 0px;
+    top: 250px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  
+  /* 项目卡片 数据 列 左侧（名称等） 样式 */
+  .ProjectCard-Data-Left-List {
+    /* Info */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 1px;
+  
+    width: 155px;
+    height: 60px;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    position: relative;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 左侧（名称等）项目名称字体 样式 */
+  .ProjectCard-Data-Left-Name-Text {
+    /* 项目名称字体 样式 */
+  
+    width: 80px;
+    height: 70px;
+  
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height */
+  
+  
+    /* 主灰色 */
+  
+    color: #424242;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    /* order: 0; */
+    position: absolute;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 左侧（名称等）项目区域、时间 结构 样式 */
+  .ProjectCard-Data-Left-Time-Structure {
+    /* Frame 7 */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    
+    align-items: flex-start;
+    padding: 0px;
+    gap: 1px;
+  
+    width: 100%;
+    height: 5px;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    position: relative;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 左侧（名称等）项目时间 位置结构（上） 样式 */
+  .ProjectCard-Data-Left-DetailText-Above {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 86px 0px 0px;
+    gap: 5px;
+    width: 100%;
+    height: 14px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 左侧（名称等）项目时间 位置结构（上）icon 样式 */
+  .ProjectCard-Data-Left-DetailText-Above-icon{
+  /* bxs:time-five */
+  
+  
+  width: 12px;
+  height: 12px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 左侧（名称等）项目区域 位置结构（下） 样式 */
+  .ProjectCard-Data-Left-DetailText-Below {
+    /* Time */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 86px 0px 0px;
+    gap: 5px;
+  
+    width: 100%;
+    height: 14px;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  
+  }
+  
+  /* 项目卡片 数据 列 左侧（名称等）项目区域 位置结构（下）icon 样式 */
+  .ProjectCard-Data-Left-DetailText-Below-icon{
+  /* 游玩ICON */
+  
+  
+  width: 12px;
+  height: 12px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 左侧（名称等）项目区域、时间 字体 样式 */
+  .ProjectCard-Data-Left-Detail-Text {
+    /* Time */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 86px 0px 0px;
+    gap: 5px;
+   
+    width: 77px;
+    height: 14px;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    /* order: 0; */
+    position: relative;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 右侧（客流量数据等） 样式 */
+  .ProjectCard-Data-Right-List {
+    /* Data */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    top: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    left: 20px;
+    width: 155px;
+    height: 60px;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    position: relative;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 右侧（客流量数据等）客流量结构（上） 样式 */
+  .ProjectCard-Data-Right-Guest-Structure-Above {
+    /* 实时客流量 */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+  
+    width: 155px;
+    height: 26px;
+  
+    background: rgba(7, 193, 96, 0.15);
+    border-radius: 5px;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 右侧（客流量数据等）预计等待时间结构（下） 样式 */
+  .ProjectCard-Data-Right-Time-Structure-Below {
+    /* 预计等待时间 */
+  
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+   
+    width: 155px;
+    height: 26px;
+  
+    background: rgba(7, 193, 96, 0.15);
+    border-radius: 5px;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 数据 列 右侧（客流量数据等）字体 样式 */
+  .ProjectCard-Data-Right-Text {
+    /* 项目卡片 数据 列 右侧（客流量数据等）字体 样式 */
+    width: 92px;
+    height: 13px;  
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+
+    color: #07C160;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  /* 项目卡片 实时客流量 icon 框架 样式 */
+  .ProjectCard-Data-Right-Guest-icon-Frame{
+  width: 30px;
+  height: 17px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  
+  /* 项目卡片 预计等待时间 icon 框架 样式 */
+  .ProjectCard-Data-Right-Time-icon-Frame{
+  width: 30px;
+  height: 17px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+
+  /* 今日人流量图表 容器 样式 */
+.Chart-Container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  margin-left: 20px;
+  margin-top: 35px;
+  left: 20px;
+  width: 350px;
+  height: 130px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  }
+  
+/* 今日人流量图表 标题字体 样式 */
+.Chart-TopText{
+    /* 今日人流量 */
+  left: 200px;
+  width: 350px;
+  height: 20px;  
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height */
+  
+  display: flex;
+  align-items: center;
+  /* 主灰色 */
+  color: #424242;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  
+  /* 今日人流量图表 盒子 样式 */
+  .Chart-Box{
+  /* Frame 3 */
+  
+  
+  /* Auto layout */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 5px;
+  width: 350px;
+  height: 100.16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  }
+  
+.ProjectCard-Data-Worry{
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    left: 20px;
+    width: 400px;
+    height: 40px;
+    top: 55px;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    position: relative;
+    flex-grow: 0;
+}
+
+.ProjectCard-Data-Worry-body{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 315px;
+    height: 26px;
+    background: rgba(193, 186, 7, 0.15);
+    border-radius: 5px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.ProjectCard-Data-Worry-icon-Frame{
+    position: static;
+    width: 17px;
+    height: 17px;
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.ProjectCard-Data-Worry-Text{
+    position: static;
+    width: 200px;
+    height: 13px;
+    left: 0px;
+    color: rgb(193, 185, 6);
+    font-family: PingFang SC;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+    
+    /* 自动布局 */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+  

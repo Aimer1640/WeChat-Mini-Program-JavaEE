@@ -1,0 +1,21 @@
+/* pages/auth/auth.wxss */
+
+.code{
+    height:40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .code .left{
+      font-family: Arial;
+      font-style: italic;
+      font-weight:bold;
+      border:0;
+      letter-spacing: 3px;
+      font-size:15px;
+      background-color: #ccc;
+      padding: 10px;
+      margin-right: 20rpx;
+      color:blue;
+  }
+  

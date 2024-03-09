@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--2040706101 杨艾琳-->
+<configuration>
+    <properties resource="db.properties"/>
+    <settings>
+        <!--配置驼峰命名映射-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <!--配置别名 类型配置-->
+    <typeAliases>
+        <typeAlias type="com.example.lab_12.pojo.Student" alias="Student"/>
+    </typeAliases>
+    <!--配置数据源 环境配置-->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--引入映射文件-->
+    <mappers>
+        <mapper resource="com/example/lab_12/mapper/StudentMapper.xml"/>
+    </mappers>
+</configuration>

@@ -1,0 +1,1084 @@
+/* 页面背景色 */
+page {
+  background: #007D68
+}
+.map{
+  width: 100%;
+  height: 100%;
+}
+.refresh{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 30rpx;
+  top: 38rpx;
+}
+/* 主体结构 */
+.Body {
+  /* Body */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 390px;
+  height: 100%;
+  left: 0px;
+  top: 20px;
+
+}
+
+/* 次主体结构 */
+.RealBody {
+  /* Real Body */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+
+  width: 390px;
+  height: 100%;
+
+  background: #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  /* order: 1; */
+  position: relative;
+  flex-grow: 0;
+}
+
+/* 项目搜索栏、回到当前位置、3D导览功能区 容器 样式 */
+.TopRibbon-Container{
+  /* Frame 6 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 39px;
+
+position: absolute;
+width: 350px;
+height: 185px;
+left: 20px;
+top: 20px;
+
+}
+
+/* 回到当前位置、3D导览 容器 样式 */
+.FunctionButton-Container{
+  /* Circle Button */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 45px;
+height: 106px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 回到当前位置按钮 容器 样式 */
+.PositionButton-Container{
+  /* Circle Button */
+
+
+width: 45px;
+height: 45px;
+
+
+/* Inside auto layout */
+
+flex: none;
+/* order: 0; */
+position: relative;
+flex-grow: 0;
+}
+
+/* 回到当前位置按钮 icon所在方位 样式 */
+.PositionButton-Icon-Position{
+  position: absolute;
+left: 22%;
+right: 22%;
+top: 22%;
+bottom: 22%;
+
+  width: 25.2px;
+  height: 25.2px;
+}
+
+/* 3D导览按钮 容器 样式 */
+.GuideButton-Container{
+  /* Circle Button */
+
+
+width: 45px;
+height: 45px;
+
+
+/* Inside auto layout */
+
+flex: none;
+/* order: 1; */
+position: relative;
+flex-grow: 0;
+}
+
+/* 3D导览按钮 icon所在方位 样式 */
+.GuideButton-Icon-Position{
+  position: absolute;
+  width: 30px;
+  height: 38px;
+  left: 7px;
+  top: 5px;
+  }
+
+  
+/* 回到当前位置、3D导览功能按钮 背景 样式 */
+.FunctionButton-Background{
+  /* Rectangle 450 */
+
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+/* Sha1 */
+
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}
+
+/* 项目搜索栏 容器 样式 */
+.SearchBar-Container {
+  /* Search */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 10px;
+
+  width: 350px;
+  height: 40px;
+
+  background: #FFFFFF;
+  /* Sha1 */
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* 展开 路线详情抽屉 点击区域 */
+.RouteDetails-Drawer-Open{
+    /* BottomBody */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+
+  position: absolute;
+  width: 350px;
+  height: 255px;
+  left: 20px;
+  top: 530px;
+}
+
+/* 路线详情 主体 样式 */
+.RouteDetails-Body {
+  /* BottomBody */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+
+  position: absolute;
+  width: 350px;
+  height: 555px;
+  left: 20px;
+  top: 530px;
+
+  background: #FFFFFF;
+  /* Sha1 */
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px 0px 0px;
+}
+
+/* 路线详情 标题 容器 样式 */
+.RouteDetails-TopText-Conrainer {
+  /* InstText */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+
+  width: 310px;
+  height: 41px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* 路线详情 标题 auto框架 样式 */
+.RouteDetails-TopText-AutoFrame {
+  /* Auto-added frame */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 286px;
+  height: 34px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* 路线详情 标题 框架 样式 */
+.RouteDetails-TopText-Frame {
+  /* Group 5 */
+
+
+  width: 188px;
+  height: 34px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  /* order: 0; */
+  position: relative;
+  flex-grow: 0;
+}
+
+/* 路线详情 标题 字体 样式 */
+.RouteDetails-TopText {
+  /* 路线详情 */
+
+
+  position: absolute;
+  width: 68px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  /* identical to box height */
+
+
+  /* 主灰色 */
+
+  color: #424242;
+}
+
+/* 路线详情 标题简介 字体 样式 */
+.RouteDetails-TopText-Introduction {
+  /* 已选择 - 智能推荐路线 */
+
+
+  position: absolute;
+  width: 188px;
+  height: 10px;
+  left: 0px;
+  top: 24px;
+
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 11px;
+  display: flex;
+  align-items: center;
+
+  /* 灰色 */
+
+  color: #9D9D9D;
+
+}
+
+/* 路线详情 卡片 容器 样式 */
+.RouteDetails-Card-Conrainer {
+  /* 卡片/默认 */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+
+  width: 310px;
+  height: 60px;
+
+  background: #FFFFFF;
+  /* Sha1 */
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* 路线详情 卡片 图片 列 样式 */
+.RouteDetails-Card-Picture-List {
+  /* Group 7 */
+
+
+  width: 62px;
+  height: 40px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.MapPage-Button-Icon{
+  height:40px;
+}
+/* 路线详情 卡片 简介 列 样式 */
+.RouteDetails-Card-Introduction-List {
+  /* Frame 7 */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 5px;
+
+  width: 92px;
+  height: 38px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* 路线详情 卡片 标题、标签 列 样式 */
+.RouteDetails-Card-TopTextLabel-List {
+  /* Frame 7 */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 5px;
+
+  width: 92px;
+  height: 38px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* 路线详情 卡片 简介 行 （智能推荐路线）标题字体 样式 */
+.RouteDetails-Card-Introduction-Row-RouteDetailsTopText {
+  /* 智能推荐路线 */
+
+
+  width: 100%;
+  height: 21px;
+
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  /* identical to box height */
+
+
+  background: linear-gradient(180deg, #1C83C5 0%, #27ABFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  position: relative;
+  flex-grow: 0;
+}
+
+/* 路线详情 卡片 简介 行 标签 框架 样式 */
+.RouteDetails-Card-Introduction-Row-Label-Frame {
+  /* Frame 5 */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 5px;
+
+  width: 100%;
+  height: 12px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* 路线详情 卡片 简介 行 等待标签 背景 样式 */
+.RouteDetails-Card-Introduction-Row-WaitLabel-Background {
+  /* Frame 5 */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  width: 45px;
+  height: 12px;
+
+  background: rgba(28, 131, 197, 0.2);
+  border-radius: 20px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* 路线详情 卡片 简介 行 等待标签 字体 样式 */
+.RouteDetails-Card-Introduction-Row-WaitLabel-Text {
+  /* 等待短 */
+
+
+  width: fit-content;
+  height: 10px;
+
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #1C83C5;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  /* order: 0; */
+  position: relative;
+  flex-grow: 0;
+}
+
+/* 路线详情 卡片 简介 行 项目标签 背景 样式 */
+.RouteDetails-Card-Introduction-Row-ProjectLabel-Background {
+  /* Frame 13 */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  width: 45px;
+  height: 12px;
+
+  background: rgba(0, 125, 104, 0.2);
+  border-radius: 20px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* 路线详情 卡片 简介 行 项目标签 字体 样式 */
+.RouteDetails-Card-Introduction-Row-ProjectLabel-Text {
+  /* 项目较多 */
+
+
+  width: fit-content;
+  height: 10px;
+
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #007D68;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* 路线详情 卡片 简介 列 内容 框架 样式 */
+.RouteDetails-Card-Introduction-List-Detail-Frame {
+  /* Frame 5 */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 5px;
+
+  width: 105px;
+  height: 34px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+/* 路线详情 卡片 简介 行 内容 项目个数 框架 样式 */
+.RouteDetails-Card-Introduction-Row-Detail-Amount-Frame {
+  /* Frame 5 */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+
+  width: 100%;
+  height: 14px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* 路线详情 卡片 简介 行 内容 项目个数 字体 样式 */
+.RouteDetails-Card-Introduction-Row-Detail-Amount-Text {
+  /* 游玩项目 15 个 */
+
+
+  width: 100%;
+  height: 14px;
+
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  /* identical to box height */
+
+
+  /* 灰色 */
+
+  color: #9D9D9D;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* 路线详情 卡片 简介 行 内容 项目个数 框架 样式 */
+.RouteDetails-Card-Introduction-Row-Detail-Time-Frame {
+  /* Frame 5 */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+
+  width: 100%;
+  height: 14px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* 路线详情 卡片 简介 行 内容 项目个数 字体 样式 */
+.RouteDetails-Card-Introduction-Row-Detail-Time-Text {
+  /* 游玩时间 4.6 小时 */
+
+
+  width: 100%;
+  height: 14px;
+
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  /* identical to box height */
+
+
+  /* 灰色 */
+
+  color: #9D9D9D;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* 开始游玩导航 按钮 样式 */
+.RouteDetails-Button {
+  /* Button */
+
+
+  /* Auto layout */
+
+  display: flex!important;
+  flex-direction: row!important;
+  justify-content: center!important;
+  align-items: center!important;
+  padding: 10px!important;
+  gap: 10px!important;
+
+  width: 305px!important;
+  height: 33px!important;
+
+  top: 13px!important;
+
+  /* 主色 */
+
+  background: #007D68!important;
+  /* Sha1 */
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)!important;
+  border-radius: 10px!important;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  position: relative;
+  flex-grow: 0;
+}
+
+/* 开始游玩导航 按钮 字体 样式 */
+.RouteDetails-Button-Text {
+  /* 开始游玩导航 */
+
+
+  width: 72px;
+  height: 17px;
+
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.list{
+  width: 50px;
+}
+.sigthdetail{
+  display: flex;
+  flex-direction: row;
+}
+.point{
+  /* Point */
+position: static;
+width: 25px;
+height: 25px;
+
+
+
+/* 自动布局 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+
+/* Inside Auto Layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+.line{
+  /* Line */
+position: static;
+width: 2px;
+height: 30px;
+
+
+/* 主色 */
+background: rgb(0, 125, 104);
+border-radius: 5px;
+
+
+/* Inside Auto Layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 0px;
+margin-left: 10px;
+
+}
+.dbshow{
+  /* 路线 */
+position: static;
+width: 310px;
+height: 30px;
+/* 自动布局 */
+display: flex;
+flex-direction: row;
+
+align-items: flex-start;
+margin-top: 30px;
+}
+.sigthinfom{
+  /* Text */
+position: static;
+width: 80px;
+height: 45px;
+
+
+
+/* 自动布局 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 9px 5px 9px 5px;
+
+
+/* Inside Auto Layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 10px 0px;
+}
+.sigthname{
+  font-family: PingFang SC;
+font-size: 17px;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0px;
+}
+/* pages/map/map.wxss */
+
+.map_container{
+  position: absolute;
+  top: 0;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+.map{
+  width: 100%;
+  height: 100%;
+}
+.map_text{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  height: 80px;
+  background: #fff;
+  padding: 0 15px;
+}
+.text{
+  margin: 5px 0;
+  display: block;
+  font-size:12px;
+}
+.h1{
+  margin: 15px 0;
+  font-size:15px;
+}
+.button{
+  list-style-type: circle;
+  align-items: center;
+  position: absolute;
+  left: 200rpx;
+  size:mini;
+  border-radius: 20px;
+  color: lightblue;
+  bottom: 0px;
+  margin:0 auto
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+.an {
+  flex-direction: row;
+  position: absolute;
+}
+.cover{
+  width: 50px;
+  height: 50px;
+  left: 0;
+}
+.text{
+  top: 0;
+}
+.station{
+  width: 50px;
+  height: 50px;
+  position:fixed;
+  bottom: 20rpx;
+  right: 20rpx;
+}
+.refresh{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 30rpx;
+  top: 38rpx;
+}
+.fontStyle{
+  font-family: cursive;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.tied{
+  display: flex;
+}
+.map_location {
+  position: absolute;
+  right: 2rpx;
+  bottom: 199rpx;
+  width: 112rpx;
+  height: 112rpx;
+  z-index: 10;
+}
+.rwor{
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+  left: 0rpx;
+  margin-left: 50rpx;
+  top: 0;
+  margin-top: 130rpx;
+}
+.number{
+  position: absolute;
+
+
+}
+.red{
+  position: absolute;
+  
+  background-color: red;
+  border-radius: 30rpx;
+  opacity: 0.2;
+  left: 0;
+  top: 0;
+  margin-top: 150rpx;
+  display: flex;
+  
+  justify-items: center;
+}
+.rword{
+  position: absolute;
+  color: red;
+  left: 200rpx;
+  top: 0;
+  margin-top: 180rpx;
+  font-family: cursive;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.yel{
+  position: absolute;
+  
+  background-color: rgb(238, 221, 69);
+  border-radius: 30rpx;
+  opacity: 0.2;
+  left: 0;
+  top: 0;
+  margin-top: 150rpx;
+  display: flex;
+  
+  justify-items: center;
+}
+.yword{
+  position: absolute;
+  color: rgba(201, 198, 29, 0.911);
+  left: 200rpx;
+  top: 0;
+  margin-top: 180rpx;
+  font-family: cursive;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.gel{
+  position: absolute;
+  
+  background-color:green;
+  border-radius: 30rpx;
+  opacity: 0.2;
+  left: 0;
+  top: 0;
+  margin-top: 150rpx;
+  display: flex;
+  
+  justify-items: center;
+}
+.gword{
+  position: absolute;
+  color: rgba(14, 105, 49, 0.911);
+  left: 200rpx;
+  top: 0;
+  margin-top: 180rpx;
+  font-family: cursive;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+

@@ -1,0 +1,58 @@
+<swiper indicator-dots="{{true}}" autoplay="true" interval="3000" class="swiperfather">
+    <swiper-item wx:for="{{sigth.imgsUrl}}" class="swiperchild"> 
+      <image src="{{item}}" mode="aspectFill" style="width: 100%;"></image>
+    </swiper-item>
+</swiper>
+
+<view class="ProjectCard-Data-Container">
+        <!-- 项目时间、区域 显示容器 -->
+        <view class="ProjectCard-Data-Left-List">
+          <view class="ProjectCard-Data-Left-Name-Text" style="font-size: 19px;">{{sigth.title}}</view>
+          <view class="ProjectCard-Data-Left-Time-Structure">
+            <view class="ProjectCard-Data-Left-DetailText-Above">
+              <image class="ProjectCard-Data-Left-DetailText-Above-icon" src="/images/OpeningHours.png"></image>
+              <text class="ProjectCard-Data-Left-Detail-Text">9:00 - 19:00</text>
+            </view>
+            <view class="ProjectCard-Data-Left-DetailText-Below">
+              <image class="ProjectCard-Data-Left-DetailText-Below-icon" src="/images/Region.png"></image>
+              <text class="ProjectCard-Data-Left-Detail-Text">{{sigth.title}}</text>
+            </view>
+          </view>
+        </view>
+
+</view>
+
+  <view class="ProjectCard-Data-Worry">
+      <view class="ProjectCard-Data-Worry-body">
+            <image class="ProjectCard-Data-Worry-icon-Frame" src="/images/worry.png"></image>
+            <view class="ProjectCard-Data-Worry-Text">孕妇、儿童和身体不适的游客请勿游玩</view>
+      </view>      
+  </view>
+
+<!-- 项目数据 显示容器 -->
+<view class="ProjectCard-Data-Right-List">
+          <view class="ProjectCard-Data-Right-Guest-Structure-Above">
+            <image class="ProjectCard-Data-Right-Guest-icon-Frame" src="/images/status=less.png"></image>
+            <view class="ProjectCard-Data-Right-Text">实时游客数量：较少</view>
+          </view>
+          |
+          <view class="ProjectCard-Data-Right-Time-Structure-Below">
+            <image class="ProjectCard-Data-Right-Time-icon-Frame" src="/images/status=immediately.png"></image>
+            <text class="ProjectCard-Data-Right-Text">预计等待时间：立刻</text>
+          </view>
+</view>
+
+
+<view class="Chart-Container">
+  <text class="Chart-TopText">今日人流量</text>
+    <view class="Chart-Box">
+    <image src="/images/pnum.png"></image>
+  </view>
+  <!-- <view class="PurchaseTickets">
+    <view class="price">{{sigth.price}}</view>
+    <button>购票</button>
+  </view> -->
+</view>
+
+
+

@@ -1,0 +1,24 @@
+<!-- 主体结构 使用figma样式-->
+<view class="Body">
+  <!-- 次主体结构 使用figma样式-->
+  <view class="RealBody">
+    <!-- 项目搜索栏 -->
+    <view class="SearchBar-Container">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="搜索项目" confirm-type="search"></input>
+    </view>
+    <!-- 项目卡片 -->
+    <view class="Card-Container">
+    
+      <view class="Poject-Name-List" >
+        <view class="Poject-Name-TopText">项目名称</view>
+        <view class="Poject-Name-Text"  wx:for="{{markers}}"  bindtap="toSigth" data-sigth-id="{{item.id}}">{{item.title}}</view>
+      </view>
+      <view class="Poject-WaitTime-List">
+        <view class="Poject-WaitTime-TopText">等待时间(分钟)</view>
+        <view class="Poject-WaitTime-Text-activation" wx:for="{{markers}}"  bindtap="toSigth" data-sigth-id="{{item.id}}">{{item.waittime}}</view>
+        <!-- <view class="Poject-WaitTime-Text-inactivation">{{item.waittime}}</view> -->
+      </view>
+    </view>
+  </view>
+</view>

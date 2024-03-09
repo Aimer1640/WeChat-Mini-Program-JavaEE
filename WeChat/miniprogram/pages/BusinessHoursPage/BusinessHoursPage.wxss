@@ -1,0 +1,306 @@
+/* 页面背景色 */
+page {
+  background: #007D68
+}
+
+/* 主体结构 */
+.Body {
+/* Body */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 390px;
+height: 762px;
+left: 0px;
+top: 20px;
+
+}
+
+/* 次主体结构 */
+.RealBody {
+  /* Real Body */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+
+  width: 390px;
+  height: 100%;
+
+  background: #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  /* order: 1; */
+  position: relative;
+  flex-grow: 0;
+}
+
+/* 项目搜索栏 容器 样式 */
+.SearchBar-Container{
+  /* Search */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 20px;
+gap: 10px;
+
+width: 350px;
+height: 40px;
+
+background: #FFFFFF;
+/* Sha1 */
+
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 项目卡片 容器 */
+.Card-Container{
+  /* 卡片 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 20px;
+gap: 60px;
+
+width: 345px;
+height: 660px;
+
+background: #FFFFFF;
+/* Sha1 */
+
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 项目名称 列 样式 */
+.Poject-Name-List{
+  /* 项目名称 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 140px;
+height: 572px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 项目名称 标题字体 样式 */
+.Poject-Name-TopText{
+/* 项目名称 */
+
+
+width: 150px;
+height: 17px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 17px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* 灰色 */
+
+color: #9D9D9D;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 项目名称 小项字体 样式 */
+.Poject-Name-Text{
+/* 大摆锤 */
+
+
+width: 150px;
+height: 17px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 17px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* 主灰色 */
+
+color: #424242;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 等待时间 列 样式 */
+.Poject-WaitTime-List{
+  /* 等待时间 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 85px;
+height: 572px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 等待时间 标题字体 样式 */
+.Poject-WaitTime-TopText{
+/* 等待时间(分钟) */
+
+
+width: 80px;
+height: 17px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 17px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* 灰色 */
+
+color: #9D9D9D;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* 等待时间 小项字体 (激活) 样式*/
+.Poject-WaitTime-Text-activation{
+/* 9:00 - 21:00 */
+
+
+width: 73px;
+height: 17px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 17px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #07C160;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/* 等待时间 小项字体 (未激活) 样式*/
+.Poject-WaitTime-Text-inactivation{
+  /* 9:00 - 21:00 */
+
+
+width: 80px;
+height: 17px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 17px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* 次灰色 */
+
+color: #D9D9D9;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 8;
+flex-grow: 0;
+}
